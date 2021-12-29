@@ -1,0 +1,76 @@
+@charset "UTF-8"; 
+
+section{text-align: center;}
+.box1{background-color: aqua;height: 300px;}
+
+
+
+
+
+ @media (min-width:350px) {
+
+  
+
+ }
+
+
+ @media (min-width:280px) {
+
+   .box1{  text-align: center; font-size:30px; line-height: 300px;}
+
+ }
+
+
+
+.section03 .enter > .item{
+       position: relative;
+       text-align: center;
+       background: #fff;
+       border-radius: 10rem;
+       padding: 7rem 14.6rem 14rem;
+       box-shadow: 2px 2px 6px rgb(0 0 0 / 20%);
+       opacity: 0;
+       transition: all 0.3s;
+       top: -10rem;
+    }
+    
+    .section03 .enter > .item:nth-child(1)::before {
+       position: absolute; 
+       width: 25rem;
+       height: 25rem;
+       left: -15rem;
+       bottom: -5rem;
+       content: "";
+       animation: bell2 2s linear infinite;
+    }
+    
+    
+    
+   
+    
+    .section04 .top-bg {
+       position: absolute;
+       width: 100%;
+       top: -28rem;
+       left: 50%;
+       transform: translateX(-50%);
+       z-index: 1;
+       text-align: center;
+    }
+    
+    
+    .section04 .top-bg::before {
+       position: absolute;
+       width: 12.9rem;
+       height: 7.9rem;
+       background: url(/art/html/images/icon/cloud-left.svg) no-repeat center center/cover;
+       top: 15rem;
+       left: 10rem;
+       content: "";
+       z-index: -1;
+       animation: cloud-left 4s linear infinite;
+       animation: cloud-right 3s linear infinite;
+    
+    }
+    
+    
