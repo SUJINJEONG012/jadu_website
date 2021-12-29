@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat'); [lang="en"] { font-family:"Montserrat",  "Noto Sans KR", sans-serif,"맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR'); [lang="ko"] { font-family: "Noto Sans KR", "Montserrat", sans-serif,"맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif; }
+
+
+
+
 body{
  margin:0;
  padding:0;
@@ -28,10 +34,7 @@ body{
 }
 
 .header .logo{
-  background-image: url(../images/logo.png);
-  width: 168px;
-  height: 60px;
-  background-repeat: no-repeat;
+
 }
 
 .header .logo .link_logo{
