@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height: 100%;
+   
+   }
+   
+   
+   /************************************HEADER********************************/
+   .header{
+     width: 100%;
+     height: 104px;
+     position: fixed;
+     background-color: #fff;
+     border-bottom: 1px solid rgba(0,0,0,0.1);
+     z-index: 1;
+   }
+   
+   .hd_inner{
+     width: 1400px;
+     height: 104px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   
+   }
+   
+   .header .logo{
+     background-image: url(../images/logo.png);
+     width: 168px;
+     height: 60px;
+     background-repeat: no-repeat;
+   }
+   
+   .header .logo .link_logo{
+     display: block;
+     cursor: pointer;
+     height: 100%;
+   }
+   
+   .blind{
+     overflow: hidden;
+     position: absolute !important;
+     width: 1px;
+     height: 1px;
+     border: 0;
+     padding: 0;
+     clip: rect(0px, 0px, 0px, 0px);
+   }
+   
+   .menu{
+       width: 600px;
+       height: 104px;
+       top:0;
+       left: 50px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       color: #000;   
+       z-index: 999;
+       font-size: 18px;
+   }
+   
+   .menu > span:hover{
+       cursor: pointer;
+       color: #00B1B3;
+   }
+   
+   .menu > span:before{ position: absolute; left: 50%; top: -12px; display: block; content: ''; clear: both; width: 8px; height: 8px; border-radius: 50%; background-color: #00B1B3;}
+   
+   
+   .content{
+       height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+   
+   .jabg_01{
+       background-color: green;
+   }
+   
+   .jabg_02{
+       background-color: coral;
+   }
+   
+   .jabg_03{
+       background-color: violet;
+   }
+   .jabg_04{background-color: teal;}
+   
+   .jabg_05{background-color: burlywood;}
+   
+   
+   
+   #section{height: 100vh;}
+   
+   
+   .container {
+       height: 100%;
+       margin: 20px;
+       background-color: tomato;
+     }
+     
+     .list {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+     }
+     .list .up-on-scroll {
+       margin-top: 20px;
+       transition: transform 0.7s, opacity 1s;
+     }
+     .img-wrap {
+       margin: 20px;
+       display: flex;
+       justify-content: center;
+       overflow: hidden;
+       max-height: 400px;
+     }
+     .img-wrap .image {
+       object-fit: contain;
+       max-width: 500px;
+       width: 100%;
+   
+   }
