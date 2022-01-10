@@ -272,7 +272,7 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 
 
 /* 브릭스 콘텐츠 설명  피시에선 이미지 3장*/
-.brix__wrap {position: relative; width: 100%; overflow: hidden; text-align: center; }
+.brix__wrap {position: relative;width: 100%;overflow: hidden;text-align: center;height: 100%;}
 .brix__imgwrap { display: flex; width: 100%;height: 650px; transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 .brix__imgwrap {  height: 100%;margin: 50px auto; display: flex; justify-content: center;  }
@@ -280,29 +280,31 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 .brix__imgwrap .brix_imgbox:nth-child(3){margin-right: 0;}
 .brix__imgwrap .brix_imgbox img{box-shadow: rgb(17 20 39 / 5%) 0px 50px 100px;}
 
+
+
 /* 브릭스 콘텐츠 설명 모바일에선 슬라이드 */
 
-.slide_area {position: relative; width: 100%; overflow: hidden;}
-ul.slide_list {height: 650px; transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1);}
-.slide_block {float: left; height: 100%;}
-.slide_block  {position: relative; display: block; height: 100%; overflow: hidden;}
-.slide_block > img {position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
-.slide_page_area {position: absolute; bottom: 53px; left: 0; right: 0; height: 30px;}
-.slide_page_inner {position: relative; width: 100%; height: 100%; margin: 0 auto; vertical-align: middle;}
-
-.btn_slide_area {float: left;}
+/* main */
+.slide_area {position: relative;width: 100%;overflow: hidden;height: 100%;}
+ul.slide_list {height: 100%;transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1);display: flex;}
+.slide_block {/* float: left; *//* height: 100%; */}
+.slide_block > a {position: relative; display: block; height: 100%; overflow: hidden;}
+.slide_block > a > picture > img {position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
+.slide_page_area {/* position: absolute; *//* bottom: 53px; */left: 0;right: 0;height: 30px;}
+.slide_page_inner {/* position: relative; */width: 1170px;height: 100%;margin: 0 auto;vertical-align: middle;}
+.btn_slide_area {/* float: left; */}
 .btn_slide {display: inline-block; width: 50px; height: 4px; background: #cfc6bc; cursor: pointer;}
 .btn_slide.active {background: #f6ca00;}
 .btn_slide + .btn_slide {margin-left: 4px;}
-.btn_auto_area {position: relative; float: left; margin-left: 30px;}
+.btn_auto_area {/* position: relative; *//* float: left; *//* margin-left: 30px; */}
 .btn_auto {position: absolute; width: 30px; height: 30px; vertical-align: top; text-indent: -9999px; border: none; background: url('../images/icon_play.png') no-repeat; background-size: 60px 30px; cursor: pointer;}
 .btn_auto.play {display: none; background-position: -30px 0;}
 /* main */
 
-.slide_block {height: 500px;}
+.slide_block img {/* height: 500px; */width: 72%;}
 .slide_block > a > picture > img {height: 100%;}
-.slide_page_area {bottom: 18px; left: 15px;}
-.slide_page_inner {width: 738px;}
+.slide_page_area {bottom: 18px;/* left: 15px; *//* text-align: center; *//* margin: 0 auto; */}
+.slide_page_inner {width: 100%;/* text-align: center; *//* margin: 0 auto; */}
 div.main_col1 {margin-top: 30px;}
 .col1 > a > p.col_cont {height: 140px;}
 .col2 {height: 400px;}
