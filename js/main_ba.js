@@ -1,4 +1,4 @@
-const spans = document.querySelectorAll('span');
+const menus = document.querySelectorAll('li');
 const contents = document.querySelectorAll('.content');
 const firstTop = contents[0].offsetTop;
 const secondTop = contents[1].offsetTop;
@@ -6,25 +6,35 @@ const thirdTop = contents[2].offsetTop;
 const fourTop = contents[3].offsetTop;
 const fifthTop = contents[4].offsetTop;
 
-spans[0].onclick = function(){
+menus[0].onclick = function(){
     window.scroll({top:firstTop, behavior:'smooth'});
+    document.getElementsByClassName("menu-tit").classList.add("active");
 }
 
-spans[1].onclick = function(){
+menus[1].onclick = function(){
     window.scroll({top:secondTop, behavior:'smooth'});
+    
+    const onclick = document.getElementsByClassName('menu-tit');
+    d
+    document.getElementsByClassName("menu-tit").classList.add("active");
 }
 
-spans[2].onclick = function(){
+menus[2].onclick = function(){
     window.scroll({top:thirdTop, behavior:'smooth'});
+   
+    
 }
 
-spans[3].onclick = function(){
+menus[3].onclick = function(){
     window.scroll({top:fourTop, behavior:'smooth'});
 }
 
-spans[4].onclick = function(){
+menus[4].onclick = function(){
   window.scroll({top:fifthTop, behavior:'smooth'});
 }
+
+
+
 
 
 
