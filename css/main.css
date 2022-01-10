@@ -13,14 +13,26 @@ body{
 }
 
 
-/************************************HEADER********************************/
 
 
+/*피시적용*/
+@media screen and (min-width: 1024px) {
+  /* STYLES HERE */
 
-
-/* 1024이상일때 header 표시하기 */
-@media (min-width:1024px) {
-  header{
-
-  }
 }
+
+/* 태블릿적용 */
+/* 786이상 ~ 최대1023 까지 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* STYLES HERE */
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) { 
+
+  /* STYLES HERE */
+}
+
+
+@media only screen and (max-width: 480px) {
+  /* STYLES HERE */
+}   

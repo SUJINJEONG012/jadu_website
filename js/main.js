@@ -34,7 +34,7 @@ function elemRemove(menuNum){
       window.scroll({top:sections[i].offsetTop, behavior:'smooth'});
       document.getElementById("menu"+(i+1)).classList.add('active');
        
-      if (matchMedia("screen and (max-width: 1024px)").matches) { 
+      if (matchMedia("screen and (max-width: 1023px)").matches) { 
         toggleClick();    
       } 
       
