@@ -400,6 +400,8 @@ div.main_col1 {margin-top: 30px;}
   /* display: flex; */
   flex-direction: column;
   width: 100%;
+  align-content: center;
+  align-items: center;
   }
 .app__tit {font-size: 1.5rem;color:#fff;padding: 1rem 0 2rem;}
 .downloads {
@@ -408,7 +410,7 @@ div.main_col1 {margin-top: 30px;}
 }
 .downloads ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .downloads li {/* width: 50%; */background: #fff;align-items: center;padding: 0.4rem 1rem;border-radius: 2rem;/* margin-bottom: 10px; */display: flex;justify-content: space-between;}
 .downloads li img{width:25%;}
