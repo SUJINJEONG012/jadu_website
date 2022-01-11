@@ -1,4 +1,38 @@
 const menus = document.querySelectorAll('li');
+<<<<<<< HEAD
+const contents = document.querySelectorAll('.content');
+const firstTop = contents[0].offsetTop;
+const secondTop = contents[1].offsetTop;
+const thirdTop = contents[2].offsetTop;
+const fourTop = contents[3].offsetTop;
+const fifthTop = contents[4].offsetTop;
+
+menus[0].onclick = function(){
+    window.scroll({top:firstTop, behavior:'smooth'});
+    document.getElementsByClassName("menu-tit").classList.add("active");
+}
+
+menus[1].onclick = function(){
+    window.scroll({top:secondTop, behavior:'smooth'});
+    
+    const onclick = document.getElementsByClassName('menu-tit');
+    d
+    document.getElementsByClassName("menu-tit").classList.add("active");
+}
+
+menus[2].onclick = function(){
+    window.scroll({top:thirdTop, behavior:'smooth'});
+   
+    
+}
+
+menus[3].onclick = function(){
+    window.scroll({top:fourTop, behavior:'smooth'});
+}
+
+menus[4].onclick = function(){
+  window.scroll({top:fifthTop, behavior:'smooth'});
+=======
 const contents = document.querySelectorAll('.contents');
 
 //사이트맵 열고닫기 상수 지정
@@ -42,6 +76,7 @@ function elemRemove(menuNum){
       document.getElementById("menu"+(i+1)).classList.remove('active');
     }
   }
+>>>>>>> b3cf4cc97b15ab8a3ec0374b23335ec746086072
 }
 
 // 함수호출 toggleClick(); 를 함수로 만든 후, 햄버게메뉴 클릭시 열고/닫히는 이벤트와
@@ -49,7 +84,12 @@ function elemRemove(menuNum){
 
 
 
+<<<<<<< HEAD
+
+
+=======
 //부드럽게 내려오는 
+>>>>>>> b3cf4cc97b15ab8a3ec0374b23335ec746086072
 
 function isElementUnderBottom(elem, triggerDiff) {
     const { top } = elem.getBoundingClientRect();
