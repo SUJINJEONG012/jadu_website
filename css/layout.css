@@ -50,7 +50,7 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 
 .flex { display: flex; justify-content: space-between;  align-items: flex-start; flex-wrap: wrap; }
 .up-on-scroll { transition: transform 0.7s ease 0s, opacity 1s ease 0s; }
-.layout {max-width: 1500px;margin: 0px auto; padding: 0.5rem; }
+.layout {max-width: 1500px;margin: 0px auto;padding: 2rem;}
 
 
 .title__wrap {}
@@ -58,11 +58,15 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 .title__wrap .title { font-size: 1.8rem; color: rgb(25, 25, 25); }
 .title__wrap .middle { font-size: 1rem; color: rgb(134, 133, 133); line-height: 1.75;padding:30px 0;}
 
+
+
 /* 1024이상일때 적용되는 코드 즉,피시일때 적용되는 소스 */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   #container {margin-top: 86px;}
-  .flex {display: flex; justify-content: space-between;  align-items: flex-start; }
+  
   .layout{padding:50px;}
+  .title__wrap .title{ font-size:3rem;}
+  .title__wrap .middle{ font-size:1rem;}
 
 }
 /* 786이상 ~ 최대1023 까지 */
@@ -217,7 +221,7 @@ body { position: relative; line-height: 1; word-break: keep-all; }
   background-position: 0% 30%;
   height: 624px;
   background-size: cover;}
-
+.img__wrap img{z-index: 999;}
 .grow__imgwrap .circle1{background: url(../images/circle1.svg) center center / 50% no-repeat; position: absolute;
   transition: all 0.3s ease 0s;width: 5rem;height: 5rem;content: "";  
   animation-name: circle1;
@@ -304,6 +308,8 @@ ul.slide_list {height: 650px; transition: transform .5s cubic-bezier(0.165, 0.84
 .slide_page_area {bottom: 18px; left: 15px;}
 .slide_page_inner {width: 738px;}
 div.main_col1 {margin-top: 30px;}
+
+
 .col1 > a > p.col_cont {height: 140px;}
 .col2 {height: 400px;}
 .label_col3 > .btn_brand {padding: 15px 0;}
@@ -315,7 +321,8 @@ div.main_col1 {margin-top: 30px;}
 
 
 .app__banner{background-color:#25DBDD; text-align: center;}
-.app__banner .flex{justify-content: center; padding: 1rem 0;}
+.app__banner .flex{justify-content: center; padding: 1rem 0;    justify-content: center;
+  padding: 1rem 0;display: flex; flex-direction: column;}
 .app__tit {font-size: 1.5rem;  color:#fff;  padding: 1rem 0 2rem; }
 .downloads {}
 .downloads ul{}
@@ -324,9 +331,17 @@ div.main_col1 {margin-top: 30px;}
 .harvest__wrap{background-color: #fafaf8;    text-align: center; flex-basis: calc(100% - 50%);}
 .harvest__wrap .flex{    align-items: center;}
 .harvest__box { position: relative; display: flex;flex-wrap: wrap;justify-content: flex-end;}
-.harvest__box .har_item{ position: relative;display: inline-block; cursor: pointer; width:100%; min-height: 320px; background-color: #fff;border-radius: 40px 0 40px 0; box-shadow: rgb(17 20 39 / 20%) 0px 50px 100px; margin: 20px;}
+.harvest__box .har_item{ position: relative;display: inline-block; cursor: pointer; width:100%; background-color: #fff;border-radius: 40px 0 40px 0; box-shadow: rgb(17 20 39 / 20%) 0px 50px 100px; margin: 20px;}
 
-.harvest__box .har_item .har-txt {padding: 20px;position: relative;width: 100%;height: 100%;  }
+.harvest__box .har_item .har-txt {padding: 20px;position: relative;width: 100%;height: 100%; 
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: inherit; }
+
 .harvest__box .har_item .har-txt span{display: inline-block; margin: 1.5rem 0 1.3em;background-color: #0BC9C3;width: 30px;height: 30px;line-height: 30px;text-align: center;color: #fff;border-radius: 5px 0 5px 0;}
 .harvest__box .har_item .har-txt strong{  margin-bottom: 14px;padding: 20px 0 20px;font-size: 27px;display: block;font-size:25px;}
 
@@ -344,21 +359,27 @@ div.main_col1 {margin-top: 30px;}
 
 
 
-.donation_wrap {position: relative; text-align: center;}
+/* 다양한 기부 방법 */
+
+.donation_wrap {position: relative; }
 .donation__box {position: relative; display: flex; flex-wrap: wrap;}
-.donation__box .dona_item{border-radius: 40px 0 40px 0;margin-bottom: 2rem; box-shadow: rgb(17 20 39 / 10%) 0px 50px 100px; 
-   width: 100%; margin-right: 1%; min-height: 320px;margin-bottom: 2rem;
-   border: 3px solid #25b7bd; }
+.donation__box .dona_item{border-radius: 40px 0 40px 0; cursor: pointer;padding: 1.3rem;margin-bottom: 2rem; box-shadow: rgb(17 20 39 / 10%) 0px 50px 100px;  width: 100%;  height:100% ; margin-right: 1%; margin-bottom: 2rem; border: 3px solid #25b7bd; text-align: left;}
+
+.donation__box .dona_item:nth-child(1){background-color: #0BC9C3;}
+.donation__box .dona_item:nth-child(2){background-color: #FFC149;}
+.donation__box .dona_item:nth-child(3){background-color: #8E8AFF;}
+
 .donation__box .dona_item:hover{background-color: #0BC9C3; transition:all ease-in-out .1s; }
-.donation__box .dona_item:hover .dona-txt strong{ color: #fff;display: block;}
-.donation__box .dona_item:hover .dona-txt p{color:#fff; } 
+.donation__box .dona_item:hover .dona-title-wrap .donation-tit strong{ color: #fff;display: block;}
+.donation__box .dona_item:hover .dona-title-wrap p{color:#fff; } 
 
-.donation__box .dona_item .dona-txt { color:#fff; padding: 20px;position: relative;width: 100%;height: 100%;  }
-
-.donation__box .dona_item .dona-txt .number{display:inline-block;margin: 1.5rem 0 1.3em;background-color: #0BC9C3;width: 30px;height: 30px;line-height: 30px;text-align: center;color: #fff;border-radius: 5px 0 5px 0;}
-.donation__box .dona_item .dona-txt > strong{  margin-bottom: 14px;padding: 20px 0 20px;font-size: 1.5rem; display: block;}
-.donation__box .dona_item .dona-txt > p{    padding-bottom: 1.5rem; font-size: 1.2rem;line-height: 1.45;}
-.donation__box .dona_item .dona-txt > span{ display: block; text-align: left; padding-bottom: 0.4rem;}
+.donation__box .dona-title-wrap {display: flex;  flex-direction: column; border-bottom: 1px dashed #a5a5a5; padding-bottom: 2.6rem;}
+.donation__box .dona-title-wrap .number{display:inline-block; background-color: #0BC9C3;width: 30px;height: 30px;line-height: 30px;text-align: center;color: #fff;border-radius: 5px 0 5px 0;}
+.donation__box .dona-title-wrap .donation-tit {/* margin-left: 1rem;*/ }
+.donation__box .dona-title-wrap .donation-tit strong{  margin-bottom: 14px; font-size: 1.2rem; display: block; font-weight: 600;}
+.donation__box .dona-title-wrap > p{ padding-bottom: 1.5rem; font-size: 1.2rem;line-height: 1.45;}
+.donation__box .donation-date{display: block;padding-left: 3rem; /*padding: 0.5rem 0 0 3rem;*/ padding:0; }
+.donation__box .donation-date > span{display: block;}
 
 .donation_wrap .circle3{background: url(../images/circle1.svg) center center / 50% no-repeat; position: absolute;
   transition: all 0.3s ease 0s;width: 4rem;height: 4rem;content: "";  
@@ -368,76 +389,106 @@ div.main_col1 {margin-top: 30px;}
   animation-iteration-count: infinite;
   animation-direction: alternate;}
 
-
-  @keyframes circle3 {
-    0%    {right: 1rem; top: -1rem;}
-    100%  {right: 2rem; top: 0rem;}
-  }
-
-  .donation_wrap .circle4{background: url(../images/circle2.svg) center center / 50% no-repeat; position: absolute;
-    transition: all 0.3s ease 0s;width: 8rem;height: 8rem;content: "";  
-    animation-name: circle4;
-    animation-duration: 1s;
-    animation-timing-function:linear ;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;}
+.donation_wrap .circle4{background: url(../images/circle2.svg) center center / 50% no-repeat; position: absolute;
+  transition: all 0.3s ease 0s;width: 8rem;height: 8rem;content: "";  
+  animation-name: circle4;
+  animation-duration: 1s;
+  animation-timing-function:linear ;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;}
   
+
+
+.donation_btn {padding: 1rem 0;background: #ffffff;width: 100%; color: #1a1a1a;border: 1px solid #474747;}
+
+    @keyframes circle3 {
+      0%    {right: 1rem; top: -1rem;}
+      100%  {right: 2rem; top: 0rem;}
+    }
+
     @keyframes circle4 {
       0%    {right: 3rem; top: -4rem;}
       100%  {right: 4rem; top: -3rem;}
     }
 
+    
+    @media  (min-width: 1024px){
+      
+      .donation_wrap .flex{ flex-direction: row-reverse;flex-wrap: nowrap;}
+    }
 
-    .donation_btn {
-      padding: 1rem 0;
-      background: #ffffff;
-      width: 100%;
-      color: #1a1a1a;
-      border: 1px solid #474747;
-  }
+
+    @media screen and (min-width: 540px) and (max-width: 767px) {
+
+      
+    }
+
+    @media (min-width: 767px) {
+      
+      .donation__box .dona_item{width:32%;min-height: 340px;}
+      .donation__box{justify-content: center;}
+      .donation__box .dona_item{width:49%;}
+
+    }
+
+    @media  (max-width: 280px){
+      .donation__box .dona-title-wrap{flex-direction: column;}
+      .donation__box .dona-title-wrap .donation-tit{margin-left: 0;}
+      .donation__box .donation-date{padding:0;}
+
+    }
+
 
 
 
  /* 자두 프렌즈  */
-.friends__wrap{ position: relative; text-align: center;}
-.firends_bg{position: absolute; width: 100%; height: 100%; left:0; bottom: -24%; background-color:#82E6D8;}
-.friend__box{position: relative;  display: flex;flex-wrap: wrap; justify-content: space-between;margin: 50px auto;}
-.friend__list{position: relative; overflow: hidden;box-shadow: rgb(17 20 39 / 10%) 0px 0px 100px; background-color: #fff; width:100%;    margin-bottom: 2rem; border-radius: 30px;}
 
+ .friends__wrap{ position: relative; text-align: center;}
+ .firends_bg{position: absolute; width: 100%; height: 100%; left:0; bottom: -24%; background-color:#82E6D8;}
+ .friend__box{position: relative;display: flex;flex-wrap: wrap;justify-content: space-between; /*margin: 3.1rem;*/}
+ .friend__list{position: relative;overflow: hidden;box-shadow: rgb(17 20 39 / 10%) 0px 0px 100px;background-color: #fff;width: 90%;margin-bottom: 2rem;border-radius: 30px;margin: 2rem auto;}
+ .friend__list::after { content: ''; display: block; position: absolute; left: 50%; bottom: 0;transform: translate(-50%, 50%); width: 50px; height: 50px;  border-radius: 50%; background-color: #82E6D8;}
 
-.fri_header { text-align: center;padding:20px 0; font-size: 1.3rem; font-weight: 500; color: #191919;}
-.list--01 .fri_header{ background: linear-gradient( 270deg, #7fefcd, #b8fdbb) !important;}
-.list--02 .fri_header{ background: linear-gradient( 270deg, #ffcd7b, #fbf7a5) !important}
-.list--03 .fri_header{ background: linear-gradient( 270deg, #8e8aff, #adb5ff) !important;}
-.list--04 .fri_header{ background: linear-gradient( 270deg, #fb5679, #febaa6) !important;}
-
-.fri_middle{width: 33%;text-align: center; margin: 1.2rem auto 0;}
-.friend__list::after { content: ''; display: block; position: absolute; left: 50%; bottom: 0;transform: translate(-50%, 50%); width: 50px; height: 50px;  border-radius: 50%; background-color: #82E6D8;}
-
-.level { font-size: 0.8rem; }
-.level:after{ display: block;content: "";margin: 7px auto;width: 1px;height: 18px;background: #191919; }
-
-.fri-title { text-align: center; padding: 0.5rem;}
-.fri-title h2{font-size:1.2rem; font-weight: 500; padding:15px 0; }
-.fri-title p{padding:10px 0;line-height: 1.65; }
-
-
-
-/*피시적용*/
-@media screen and (min-width: 1024px) {
+ .friend__list .fri_header { text-align: center;padding:20px 0; font-size: 1.3rem; font-weight: 500; color: #191919;}
+ .friend__list.list--01 .fri_header{ background: linear-gradient( 270deg, #7fefcd, #b8fdbb) !important;}
+ .friend__list.list--02 .fri_header{ background: linear-gradient( 270deg, #ffcd7b, #fbf7a5) !important}
+ .friend__list.list--03 .fri_header{ background: linear-gradient( 270deg, #8e8aff, #adb5ff) !important;}
+ .friend__list.list--04 .fri_header{ background: linear-gradient( 270deg, #fb5679, #febaa6) !important;}
  
-
-}
-
-/* 태블릿적용 */
-/* 786이상 ~ 최대1023 까지 */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+ .friend__list .fri-title {text-align: center;padding: 3rem  0.3rem 3rem;}
+ .friend__list .fri-title .level { font-size: 0.8rem; }
+ .friend__list .fri-title .level:after{ display: block;content: "";margin: 7px auto;width: 1px;height: 18px;background: #191919; }
+ .friend__list .fri-title img{ width: 25%; display: inherit;text-align: center;margin: 0 auto;}
+ .friend__list .fri-title h2{font-size: 1.2rem; font-weight: 500; padding:15px 0; }
+ .friend__list .fri-title p{ font-size: 0.9rem; padding:10px 0;line-height: 1.65; }
+ 
+@media screen and (min-width: 580px) {
+  .firends_bg{height: 90%;}
+  .friend__list{width:48%;}
 
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) { 
-
   
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  .firends_bg{height: 70%;}
+  .friend__list{width: 24%;
+    margin-left: 1%;}
+
+}
+
+@media screen and (min-width: 1520px) {
+ 
+}
+@media  (max-width: 280px){
+  .layout{padding:0.5rem;}
+
+}
