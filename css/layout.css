@@ -347,12 +347,14 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 /* ë¸Œë¦­ìŠ¤ ì½˜í…ì¸  ì„¤ëª…  í”¼ì‹œì—ì„  ì´ë¯¸ì§€ 3ìž¥*/
 .brix__wrap {position: relative;width: 100%;overflow: hidden;text-align: center;height: 100%;}
 .brix__imgwrap { display: flex; width: 100%;height: 650px; transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1); }
-
-.brix__imgwrap {  height: 100%;margin: 50px auto; display: flex; justify-content: center;  }
+.moblie_brix__imgwrap{display: none; }
+.brix__imgwrap {  height: 100%;margin: 50px auto; display: flex; justify-content: center; }
 .brix__imgwrap .brix_imgbox { object-fit: contain;height: 100%; box-shadow: rgba(17, 20, 39, 0.2) 0px 50px 100px; margin-right: 45px;}
 .brix__imgwrap .brix_imgbox:nth-child(3){margin-right: 0;}
 .brix__imgwrap .brix_imgbox img{box-shadow: rgb(17 20 39 / 5%) 0px 50px 100px;}
-
+@media only screen and (min-width: 1024px) {
+  .moblie_brix__imgwrap{display: block;}
+}
 
 
 /* ë¸Œë¦­ìŠ¤ ì½˜í…ì¸  ì„¤ëª… ëª¨ë°”ì¼ì—ì„  ìŠ¬ë¼ì´ë“œ */
