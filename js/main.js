@@ -82,8 +82,6 @@ window.addEventListener('scroll', handleScroll);
 
 
 
-
-
 	// 브릭스란 ? 슬라이드
 	const slideList = document.querySelector('ul.slide_list');
 	const slideBlock = document.querySelectorAll('.slide_block');
@@ -91,7 +89,7 @@ window.addEventListener('scroll', handleScroll);
 	const slideBlockWidth = 100 / (slideLen + 1); // li 너비 계산
 	const btnSlide = document.querySelectorAll('.btn_slide');
 	
-  let curIndex = 0;
+    let curIndex = 0;
 	let curBtn = btnSlide[curIndex];
 	curBtn.classList.add('active');
 
