@@ -63,7 +63,7 @@ function handleScroll() {
     elems.forEach(elem => {
         if (isElementUnderBottom(elem, -20)) {
             elem.style.opacity = "0";
-            elem.style.transform = 'translateY(20px)';
+            elem.style.transform = 'translateY(70px)';
 
         } else {
             elem.style.opacity = "1";
