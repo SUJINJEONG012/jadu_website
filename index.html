@@ -148,13 +148,47 @@
           브릭스가 적립되며수확하기(기부하기)를 통해 브릭스를 사용 할 수 있습니다. </div>
          </div>
            
+         <!-- 1024 이상 피시에서 보여지는 화면 -->
           <div class="brix__imgwrap moblie_brix__imgwrap">
                 <div class="brix_imgbox"><img src="./images/donation01.svg" alt="img1" class="image up-on-scroll" /></div>
                 <div class="brix_imgbox"><img src="./images/donation02.svg" alt="img2" class="image up-on-scroll" /></div>
                 <div class="brix_imgbox"><img src="./images/donation03.svg" alt="img3" class="image up-on-scroll" /></div>
           </div>
 
+      
+  <div class="brixslide__wrap">
+
+  <div class="arrow prev" onclick = "prevNext(-1)">&#10094;</div>
+  <div class="arrow next" onclick = "prevNext(1)">&#10095;</div>
+
+  <div class="slideNum">
+      <span id="thisSlide">0</span> / <span id="allSlide">0</span>
+  </div>
+
+  <article class="slides">
+      <img src="./images/donation01.svg" alt="">
+  </article><!--1-->
+  <article class="slides">
+      <img src="./images/donation02.svg" alt="">
+  </article><!--2-->
+  <article class="slides">
+      <img src="./images/donation03.svg" alt="">
+  </article><!--3-->
   
+
+</div>  
+
+<!--pager {-->
+<div id="pager">
+  <span class="dots on" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+  
+</div><!--pager }-->
+
+<div class="slideStopStart" onclick = "stopSlide()">STOP SLIDES</div>
+<div class="slideStopStart" onclick = "showSlides()">RESTART SLIDES</div>
+
 
        </div>
       </div>
