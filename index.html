@@ -108,7 +108,7 @@
 
 
         <div class="grow__imgwrap img__wrap">
-            <div class="grow_bg up-on-scroll"></div>
+            <div class="grow_bg"></div>
 
             <div class="grow__img up-on-scroll">
               <img src="./images/grow_mobile.svg" alt="">
@@ -159,12 +159,20 @@
   <div class="brixslide__wrap up-on-scroll">
 
  
-
+    
   <div class="slideNum">
       <span id="thisSlide">0</span> / <span id="allSlide">0</span>
   </div>
 
-  <div class="slides__wrap">
+  <div class="slide__wrap">
+
+    <div class="arrow__wrap">
+      <div class="arrow prev" onclick = "prevNext(-1)">&#10094;</div>
+      <div class="arrow next" onclick = "prevNext(1)">&#10095;</div>
+    </div>
+    
+
+
   <article class="slides">
       <img src="./images/donation01.svg" alt="">
   </article><!--1-->
@@ -174,11 +182,8 @@
   <article class="slides">
       <img src="./images/donation03.svg" alt="">
   </article><!--3-->
-  <div class="arrow__wrap">
-    <div class="arrow prev" onclick = "prevNext(-1)">&#10094;</div>
-    <div class="arrow next" onclick = "prevNext(1)">&#10095;</div>
-  </div>
-  </div>
+
+</div>
 
 </div>  
 
