@@ -63,7 +63,7 @@ function handleScroll() {
     elems.forEach(elem => {
         if (isElementUnderBottom(elem, -20)) {
             elem.style.opacity = "0";
-            elem.style.transform = 'translateY(10px)';
+            elem.style.transform = 'translateY(20px)';
 
         } else {
             elem.style.opacity = "1";
@@ -82,22 +82,18 @@ window.addEventListener('scroll', handleScroll);
 
 	// 브릭스이미지 슬라이드
 
-	var slides = document.getElementsByClassName('slides');
-var dots =  document.getElementsByClassName('dots');
+const slides = document.getElementsByClassName('slides');
+const dots =  document.getElementsByClassName('dots');
 
-var slideIndex = 0;
+let slideIndex = 0;
 
 document.getElementById('allSlide').innerHTML = slides.length;
 
-
-
-var myVar;
-
+let myVar;
 
 showSlides();
-
 function showSlides(){
-    for(var i=0; i<slides.length; i++){
+    for(let i=0; i<slides.length; i++){
         slides[i].style.display = 'none';
         dots[i].className = dots[i].className.replace(" on", "");}
     
@@ -132,6 +128,7 @@ function prevNext(num){
     dots[slideIndex - 1 ].className += ' on';
 }
 
+
 /* ========= */
 function currentSlide(num){
     stopSlide();
@@ -146,6 +143,5 @@ function currentSlide(num){
     dots[slideIndex - 1 ].className += ' on';
 
 }
-
 
 

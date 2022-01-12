@@ -149,24 +149,22 @@
          </div>
            
          <!-- 1024 이상 피시에서 보여지는 화면 -->
-          <div class="brix__imgwrap moblie_brix__imgwrap">
+          <div class="brix__imgwrap moblie_brix__imgwrap up-on-scroll">
                 <div class="brix_imgbox"><img src="./images/donation01.svg" alt="img1" class="image up-on-scroll" /></div>
                 <div class="brix_imgbox"><img src="./images/donation02.svg" alt="img2" class="image up-on-scroll" /></div>
                 <div class="brix_imgbox"><img src="./images/donation03.svg" alt="img3" class="image up-on-scroll" /></div>
           </div>
 
-      
-  <div class="brixslide__wrap">
+      <!-- 슬라이드1 -->
+  <div class="brixslide__wrap up-on-scroll">
 
-  <div class="arrow__wrap">
-    <div class="arrow prev" onclick = "prevNext(-1)">&#10094;</div>
-    <div class="arrow next" onclick = "prevNext(1)">&#10095;</div>
-  </div>
+ 
 
   <div class="slideNum">
       <span id="thisSlide">0</span> / <span id="allSlide">0</span>
   </div>
 
+  <div class="slides__wrap">
   <article class="slides">
       <img src="./images/donation01.svg" alt="">
   </article><!--1-->
@@ -176,9 +174,14 @@
   <article class="slides">
       <img src="./images/donation03.svg" alt="">
   </article><!--3-->
-  
+  <div class="arrow__wrap">
+    <div class="arrow prev" onclick = "prevNext(-1)">&#10094;</div>
+    <div class="arrow next" onclick = "prevNext(1)">&#10095;</div>
+  </div>
+  </div>
 
 </div>  
+
 
 <!--pager {-->
 <div id="pager">
@@ -191,6 +194,10 @@
 <!-- <div class="slideStopStart" onclick = "stopSlide()">STOP SLIDES</div>
 <div class="slideStopStart" onclick = "showSlides()">RESTART SLIDES</div>
  -->
+
+ <!-- 슬라이드1 end -->
+
+
 
        </div>
       </div>
@@ -205,8 +212,8 @@
           <div class="app__tit up-on-scroll">자두앱을 다운로드 받아보세요.</div> 
             <div class="downloads up-on-scroll">
               <ul>
-                <li><img src="./images/googlePaly_icon.svg" alt="Google Play"><span> Google Play </span></li>
-                <li><img src="./images/apple_logo_icon.svg" alt="Apple Store"><span> Apple Store </span></li>
+                <li><img src="./images/googlePaly_icon.svg" alt="Google Play"><span lang="en"> Google Play </span></li>
+                <li><img src="./images/apple_logo_icon.svg" alt="Apple Store"><span lang="en"> Apple Store </span></li>
              </ul>
             </div>
       </div>
@@ -227,38 +234,40 @@
         
             <div class="harvest__box">
 
-             
               <div class="har_item box1 up-on-scroll">
-                <div class="har-txt">
-                <span lang="en">01.</span>
-                <strong>쇼핑하기</strong>
-                <p> '자두 앱을 통해 필요한 상품을 구매하세요.</p>
+                <div class="har-txt har-txtbox">
+                <div class="har-tit"><span lang="en">01</span><strong>쇼핑하기</strong></div>
+                <div class="har-txt"><p> '자두 앱을 통해 필요한 상품을 구매하세요.</p></div> 
               </div>
               </div>
 
               <div class="har_item box2 up-on-scroll">
-                <div class="har-txt">
-                <span lang="en">02.</span>
-                <strong>결제하기</strong>
-                <p> 원하시는 상품을 선택하셨다면 결제를 진행해주세요.</p>
+                <div class="har-txt har-txtbox">
+                <div class="har-tit"><span lang="en">02</span><strong>결제하기</strong></div>
+                <div class="har-txt"><p>원하시는 상품을 선택하셨다면 결제를 진행해주세요.</p></div> 
               </div>
               </div>
 
               <div class="har_item box3 up-on-scroll">
-                <div class="har-txt">
-                <span lang="en">03.</span>
-                <strong>브릭스적립</strong>
-                <p> 최대1.5%가 적립 됩니다.</p>
+                <div class="har-txt har-txtbox">
+                <div class="har-tit"><span lang="en">03</span><strong>브릭스적립</strong></div>
+                <div class="har-txt"><p>최대1.5%가 적립 됩니다.</p></div> 
               </div>
               </div>
 
               <div class="har_item box4 up-on-scroll">
-                <div class="har-txt">
-                <span lang="en">04.</span>
-                <strong>기부하기</strong>
-                <p>적립된 포인트를 원하는곳에 기부하세요.</p>
-                </div>
+                <div class="har-txt har-txtbox">
+                <div class="har-tit"><span lang="en">04</span><strong>기부하기</strong></div>
+                <div class="har-txt"><p>적립된 포인트를 하는곳에 기부하세요.</p></div> 
               </div>
+              </div>
+
+
+
+
+              
+
+             
             </div>
          </div>
 
@@ -336,8 +345,8 @@
              </div>
 
            <div class="donation-date">
-             <span>날짜 : 2022년 3월 20일 오전 10시~ 12시</span>
-             <span>장소 : 자두광역시 두두구 푸르니동</span>
+             <span lang="en">날짜 : 2022년 3월 20일 오전 10시~ 12시</span>
+             <span lang="en">장소 : 자두광역시 두두구 푸르니동</span>
            </div>
 
          </li>
@@ -347,11 +356,11 @@
 
           </ul>
 
-          
+          <div class="donation_btn">더 보기</div>
 
          </div>
 
-         <div class="donation_btn">더 보기</div>
+        
 
       </div>
       <!-- donation_wrap end  -->
