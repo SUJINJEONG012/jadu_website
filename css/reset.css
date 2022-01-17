@@ -99,3 +99,32 @@ input:-webkit-autofill { box-shadow: inset 0 0 0 1000px #fff }
 
 
 
+html:not(.mobile) {
+    scrollbar-3dLight-Color: #ddd;
+    scrollbar-arrow-color: #ddd;
+    scrollbar-base-color: #eee;
+    scrollbar-Face-Color: #f2f2f2;
+    scrollbar-Track-Color: #fff;
+    scrollbar-DarkShadow-Color: #ddd;
+    scrollbar-Highlight-Color: #ddd;
+    scrollbar-Shadow-Color: #f2f2f2;
+}
+html:not(.mobile) ::-webkit-scrollbar {
+    width: 5px;
+}
+html:not(.mobile) ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #ddd;
+    -webkit-box-shadow: inset 0 0 1px rgb(0 0 0 / 2%);
+}
+html:not(.mobile) ::-webkit-scrollbar-track {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+html:not(.mobile) ::selection {
+    background: #f7fafe;
+    color: #232C51;
+    text-shadow: none;
+}
