@@ -17,7 +17,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 1rem; line-height: 24px; font-style: normal; 
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 16px; line-height: 24px; font-style: normal; 
     font-weight: 400; vertical-align: baseline; 
     line-height: 1.2; letter-spacing: -1px; color: #191919;
     font-family:"Noto Sans KR", "Montserrat", sans-serif,"맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;} 
@@ -37,7 +37,7 @@ a { color: inherit; text-decoration: none; }
 
 
 .blind,.hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0 } 
-html { font-size: 16px } 
+
 [lang="ko"] {font-family: "Noto Sans KR", "Montserrat", sans-serif,"맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;}
 [lang="en"] {font-family: "Montserrat", "Noto Sans KR", sans-serif; letter-spacing: 0;  font-weight: 400;}
 
@@ -125,6 +125,6 @@ html:not(.mobile) ::-webkit-scrollbar-track {
 
 html:not(.mobile) ::selection {
     background: #f7fafe;
-    color: #232C51;
+    color: #08dbc7;
     text-shadow: none;
 }
