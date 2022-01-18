@@ -25,13 +25,13 @@ width: 30%; height: 30vh; background-size: 100%; z-index: 99;}
 .tabs .tab-button {display: none;}
 
 
+@media screen and (min-width: 1200px) {}
+
 @media all and (min-width: 1024px) {}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .donation_banner{}
 }
-
-@media screen and (min-width: 1200px) {}
 
 @media  (max-width: 280px){}
 
