@@ -380,8 +380,8 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 .harvest__box { display: flex; flex-wrap: wrap; justify-content: center; }
 .harvest__box .har_item { position: relative; margin-bottom: 5%; cursor: pointer; width: 100%; background-color: rgb(255, 255, 255); border-radius: 40px 0px; box-shadow: rgba(17, 20, 39, 0.2) 0px 50px 100px; }
 .harvest__box .har_item .har-txtbox { position: relative; width: 100%; height: 100%; display: block; padding: 5rem 0px; }
-.harvest__box .har_item .har-txtbox .har-txt { padding-top: 2rem; font-size: 1.2rem; }
-.harvest__box .har_item .har-txtbox .har-num { display: block; margin: 2rem auto; background-color: rgb(11, 201, 195); width: 30px; height: 30px; line-height: 30px; text-align: center; color: rgb(255, 255, 255); border-radius: 5px 0px; border-bottom: 1px solid rgb(152, 247, 244); }
+.harvest__box .har_item .har-txtbox .har-txt { padding: 2rem 1rem 0; font-size: 1rem; line-height: 1.45;}
+.harvest__box .har_item .har-txtbox .har-num { display: block; margin: 1rem auto; background-color: rgb(11, 201, 195); width: 30px; height: 30px; line-height: 30px; text-align: center; color: rgb(255, 255, 255); border-radius: 5px 0px; border-bottom: 1px solid rgb(152, 247, 244); }
 .harvest__box .har_item .har-txtbox strong { font-size: 1.7rem; color: rgb(11, 201, 195); font-weight: 500; }
 .harvest__box .har_item.box1 { top: 0px; }
 .harvest__box .har_item.box2 { top: 0px; }
@@ -397,7 +397,7 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 }
 @media screen and (min-width: 1350px) {
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   .harvest__wrap { text-align: left; padding: 10rem 0px; }
   .harvest__wrap .flex { flex-flow: row nowrap; }
   .harvest__wrap .title__wrap { width: 60%; text-align: left; }
@@ -413,17 +413,23 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 }
 
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
 .harvest__box .har_item{width:22%; margin: 1%; }
-}
+} */
 
 
 @media screen and (min-width: 840px) and (max-width: 1199px) {
   .harvest__wrap .title__wrap { text-align: center; }
 }
-@media screen and (min-width: 481px) and (max-width: 1023px) {
-  .harvest__box .har_item { width: 45%; margin: 1%; }
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .harvest__box .har_item { width: 20%; margin: 2%; }
 }
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .harvest__box .har_item { width: 48%; margin: 1%; }
+}
+
 
 
 @media screen and (max-width: 280px) {
