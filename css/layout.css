@@ -93,7 +93,7 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 
 
 
-/* main visual */
+/**************************************  main visual *************************************/
 .main-visual { position: relative; width: 100%; height: 50rem;   }
 .main-visual .visual{width: 100%; height: 100%; }
 .main-visual .bg{background-image: url("../images/main-visual_bg.png"); background-position: center bottom; background-size: cover; background-repeat: no-repeat;}
@@ -116,7 +116,7 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 }
 
 
-@keyframes item1 {0% {right:5rem; top:-10rem;} 100%  {right:6rem;  top:-13rem;}}
+@keyframes item1 {0% {right:5rem; top:-5rem;} 100%  {right:6rem;  top:-6rem;}}
 
 
 
@@ -486,7 +486,7 @@ z-index: -1;
 
 .harvest__box { display: flex; flex-wrap: wrap; justify-content: center; }
 .harvest__box .har_item{position: relative;margin-bottom: 5%;cursor: pointer;width:100%; background-color: #fff;border-radius: 40px 0 40px 0;  box-shadow: rgb(17 20 39 / 20%) 0px 50px 100px;}
-.harvest__box .har_item .har-txtbox {position: relative; width: 100%; height: 100%;display: block;    padding: 3rem 0; }
+.harvest__box .har_item .har-txtbox {position: relative;width: 100%;height: 100%;display: block;padding: 5rem 0;}
 .harvest__box .har_item .har-txtbox .har-txt {padding-top: 2rem; font-size: 1.2rem; }
 .harvest__box .har_item .har-txtbox .har-num{display: block;margin: 2rem auto; background-color: #0BC9C3;width: 30px; height: 30px;line-height: 30px;  margin-bottom: 2rem; text-align: center;color: #fff;border-radius: 5px 0 5px 0;border-bottom: 1px solid #98f7f4;}
 .harvest__box .har_item .har-txtbox  strong{font-size: 1.7rem; color:#0BC9C3; font-weight: 500;}
@@ -526,7 +526,7 @@ z-index: -1;
   .harvest__box .har_item{width: 33%;   margin: 2%;}
   .harvest__box .har_item .har-txtbox{align-items: flex-start;}
 
-  .harvest__box .har_item .har-txtbox .har-num{margin: 2rem 0;}
+  .harvest__box .har_item .har-txtbox .har-num{margin: 1rem 0;}
   .harvest__box li{padding:30px;}
   .harvest__box .har_item.box1{top: -45px;}
   .harvest__box .har_item.box2{top: 0px;}
@@ -586,28 +586,25 @@ z-index: -1;
 
 .donation__box .dona_item:nth-child(1){background-color: #0BC9C3;background-image: url(../images/dona_item01.svg);
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: auto;}
-.donation__box .dona_item:nth-child(2){background-color: #3CB9FF;background-image: url(../images/dona_item02.svg);
+  background-position: 90% 90%;
+  background-size: 44%;}
+.donation__box .dona_item:nth-child(2){background-color: #FFC876;background-image: url(../images/dona_item02.svg);
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: auto;}
+  background-position: 90% 90%;
+  background-size: 44%;}
 .donation__box .dona_item:nth-child(3){background-color: #8E8AFF ;background-image: url(../images/dona_item03.svg);
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: auto;}
+  background-position: 90% 90%;
+  background-size: 44%;}
 
-/* .donation__box .dona_item:hover{background-color: #0BC9C3; transition:all ease-in-out .1s; }
-.donation__box .dona_item:hover .dona-title-wrap .donation-tit strong{ color: #fff;display: block;}
-.donation__box .dona_item:hover .dona-title-wrap p{color:#fff; }  */
 .dona-txtbox{height: 100%;  }
-.donation__box .dona-title-wrap {display: flex;  flex-direction: column; border-bottom: 1px dashed #a5a5a5; }
-.donation__box .dona-title-wrap .number{display:inline-block; /*background-color: #0BC9C3;*/ width: 30px;height: 30px;line-height: 30px;text-align: center;color: #fff;border-radius: 5px 0 5px 0;}
-.donation__box .dona-title-wrap .donation-tit {}
+.donation__box .dona-title-wrap {display: flex;  flex-direction: column; }
+.donation__box .dona-title-wrap .number{display:inline-block;  width: 30px;height: 30px;line-height: 30px;text-align: center;color: #fff;border-radius: 5px 0 5px 0;}
+
 .donation__box .dona-title-wrap .donation-tit strong{ color:#fff; margin-bottom: 14px; font-size: 1.2rem; display: block; font-weight: 600;}
 .donation__box .dona-title-wrap .donation-tit p{  color:#fff;  padding-bottom: 1.5rem; font-size: 1.2rem;line-height: 1.45;}
-.donation__box .donation-date{ padding-left: 3rem; /*padding: 0.5rem 0 0 3rem;*/ padding:0; }
-.donation__box .donation-date > span{    color: #fff;
+.donation__box .donation-date{ padding-left: 3rem; padding:0; }
+.donation__box .donation-date > span{ color: #fff;
   font-weight: 300;
   font-size: 13px;
   display: block;
