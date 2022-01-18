@@ -1,0 +1,30 @@
+@charset "UTF-8"; 
+
+
+.intro {margin-top: 86px; width: 100%; height: 100vh; background:#f9f9f9;}
+.intro .img {width: 100%; height: 40vh; background-image: url(../images/deco02.svg); background-repeat: no-repeat; background-position: center bottom; background-size: 9rem; }
+
+.intro .txt_box {width:100%;  padding: 5%; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; }
+.intro .txt_box .title {font-size: 2.1rem; color: rgb(23, 23, 23); padding: 1.5rem 0;}
+.intro .txt_box .title > span {color: #00B1B3;}
+
+.intro .txt_box .detail {font-size: 1rem; line-height: 1.5;}
+
+/* 반응형 */
+
+@media screen and (min-width: 1024px) {
+    .intro .txt_box {padding: 2%;}
+    .intro .txt_box .title{ font-size: 2.6rem;}
+    .intro .txt_box .detail { font-size: 1.2rem;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .intro .txt_box .title {font-size: 2.5rem;}
+    .intro .txt_box .detail {font-size: 1.2rem;}
+}
+
+@media  (max-width: 280px){
+    .intro {margin-top: 86px; width: 100%;}
+    .intro .txt_box .title { font-size: 1.5rem;}
+    .intro .txt_box .detail {font-size: 0.9rem;}
+}
