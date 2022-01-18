@@ -12,7 +12,7 @@
 
 /* 반응형 */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     .intro .txt_box {padding: 2%;}
     .intro .txt_box .title{ font-size: 2.6rem;}
     .intro .txt_box .detail { font-size: 1.2rem;}
