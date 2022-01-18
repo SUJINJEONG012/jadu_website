@@ -391,6 +391,7 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 .harvest__box .har_item:hover .har-txtbox { color: rgb(255, 255, 255); }
 .harvest__box .har_item:hover .har-txtbox .har-num { background-color: rgb(255, 255, 255); color: rgb(11, 201, 195); }
 .harvest__box .har_item:hover .har-txtbox strong { color: rgb(255, 255, 255); display: block; }
+.harvest__box .har_item:hover .har-txtbox .har-txt{color:#fff;}
 .harvest__box .har_item:hover .har-txtbox .har-txt .eng { color: rgb(255, 255, 255); margin-bottom: 38px; }
 @media screen and (min-width: 1520px) {
 }
@@ -410,21 +411,31 @@ body { position: relative; line-height: 1; word-break: keep-all; }
   .harvest__box .har_item.box3 { top: 0px; }
   .harvest__box .har_item.box4 { top: 40px; }
 }
+
+
+@media screen and (min-width: 1024px) {
+.harvest__box .har_item{width:22%; margin: 1%; }
+}
+
+
 @media screen and (min-width: 840px) and (max-width: 1199px) {
   .harvest__wrap .title__wrap { text-align: center; }
 }
-@media screen and (min-width: 481px) and (max-width: 1199px) {
+@media screen and (min-width: 481px) and (max-width: 1023px) {
   .harvest__box .har_item { width: 45%; margin: 1%; }
 }
+
+
 @media screen and (max-width: 280px) {
 }
 .donation_wrap { position: relative; }
 .donation_wrap .flex { justify-content: center; }
 .donation_wrap .title__wrap { text-align: center; }
 .donation__box { position: relative; display: flex; flex-wrap: wrap; }
-.donation__box .dona_item { border-radius: 40px 0px; cursor: pointer; box-shadow: rgba(17, 20, 39, 0.1) 0px 50px 100px; padding: 7rem 1.2rem; text-align: left; width: 29%; margin: 0px 2%; }
+.donation__box .dona_item { border-radius: 40px 0px; cursor: pointer; box-shadow: rgba(17, 20, 39, 0.1) 0px 50px 100px; 
+  padding: 7rem 1.2rem; text-align: left; width: 24%; margin: 0px 2%; }
 @media (min-width: 1200px) {
-  .donation__box .dona_item { height: 550px; }
+  .donation__box .dona_item { height: auto; }
 }
 .donation__box { justify-content: center; margin: 50px auto; }
 .donation__box .dona_item:nth-child(1) { background-color: rgb(11, 201, 195); background-image: url("../images/dona_item01.svg"); background-repeat: no-repeat; background-position: 90% 90%; background-size: 44%; }
@@ -433,10 +444,10 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 .dona-txtbox { height: 100%; }
 .donation__box .dona-title-wrap { display: flex; flex-direction: column; }
 .donation__box .dona-title-wrap .number { display: inline-block; width: 30px; height: 30px; line-height: 30px; text-align: center; color: rgb(255, 255, 255); border-radius: 5px 0px; }
-.donation__box .dona-title-wrap .donation-tit strong { color: rgb(255, 255, 255); margin-bottom: 14px; font-size: 1.2rem; display: block; font-weight: 600; }
-.donation__box .dona-title-wrap .donation-tit p { color: rgb(255, 255, 255); padding-bottom: 1.5rem; font-size: 1.2rem; line-height: 1.45; }
+.donation__box .dona-title-wrap .donation-tit strong { color: rgb(255, 255, 255); margin-bottom: 3rem; font-size: 1.2rem; display: block; font-weight: 600; }
+.donation__box .dona-title-wrap .donation-tit p { color: rgb(255, 255, 255); padding-bottom: 1.5rem; font-size: 1.5rem; line-height: 1.45; }
 .donation__box .donation-date { padding: 0px; }
-.donation__box .donation-date > span { color: rgb(255, 255, 255); font-weight: 300; font-size: 13px; display: block; padding: 4px 0px; }
+.donation__box .donation-date > span { color: rgb(255, 255, 255); font-weight: 300;font-size: 1.1rem; display: block; padding: 4px 0px; }
 .donation_wrap .circle3 { background: url("../images/circle1.svg") center center / 50% no-repeat; position: absolute; transition: all 0.3s ease 0s; width: 4rem; height: 4rem; content: ""; animation-name: circle3; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite; animation-direction: alternate; }
 .donation_wrap .circle4 { background: url("../images/circle2.svg") center center / 50% no-repeat; position: absolute; transition: all 0.3s ease 0s; width: 8rem; height: 8rem; content: ""; animation-name: circle4; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite; animation-direction: alternate; }
 .donation_btn { padding: 1rem 0px; background: rgb(255, 255, 255); width: 100%; color: rgb(26, 26, 26); border: 1px solid rgb(71, 71, 71); text-align: center; border-radius: 40px; }
@@ -454,7 +465,7 @@ body { position: relative; line-height: 1; word-break: keep-all; }
 }
 @media screen and (min-width: 540px) and (max-width: 767px) {
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1023px) {
   .donation__box .dona_item { border-radius: 40px 0px; cursor: pointer; box-shadow: rgba(17, 20, 39, 0.1) 0px 50px 100px; width: 100%; height: auto; margin-bottom: 2rem; text-align: left; padding: 3rem; }
 }
 @media (max-width: 280px) {
