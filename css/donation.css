@@ -1,0 +1,56 @@
+@charset "UTF-8"; 
+
+/****************************** 공통요소 ******************************/
+.content {width: 100%;}
+.content_inner {margin: 0 auto; padding: 0 15px;}
+/****************************** top banner ******************************/
+.donation_banner { position: relative; width: 100%; height: 75vh; padding: 5rem 0 0; background-color: #63C5A7;}
+.donation_banner .layout{height: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; display: block; padding-top: 7rem; }
+.donation_banner .main-tit {width:100%;}
+.donation_banner .main-tit > h2 { font-size: 2.4rem; color:#fff; font-weight: 500; text-align: center; padding-bottom: 2rem;}
+.donation_banner .main-tit .destxt { font-size: 1.2rem; line-height: 1.5; color: #fff; padding-bottom: 2rem; display: block; text-align: center; }
+
+.donation_banner .layout .decowrap { }
+.donation_banner .layout .decowrap .deco1 { position:absolute; left:5.1rem; bottom:0; background: url(../images/deco02.svg); background-repeat: no-repeat; background-position: 18% bottom;
+width: 30%; height: 30vh; background-size: 100%; z-index: 99;}
+.donation_banner .layout .decowrap .deco2 {position:absolute; left:0; bottom:0; background: url(../images/deco01.svg); width: 30%; height: 36vh; background-size: 100%; background-repeat: no-repeat; background-position:bottom left;}
+.donation_banner .layout .decowrap .deco3 {position:absolute; right:0; bottom:0; background: url(../images/deco03.svg); width: 30%; height: 30vh; background-size: 100%; background-repeat: no-repeat; background-position:bottom right;}
+
+
+.tabs .tab-select {}
+.tabs .tab-select select {appearance:none; 
+    width: 100%; padding: 1.6rem; 
+    text-align: center; 
+    font-size: 1.2rem; color: #00B1B3; border: 1px solid rgba(0,0,0,0.1);}
+.tabs .tab-button {display: none;}
+
+
+@media all and (min-width: 1024px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .donation_banner{}
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media  (max-width: 280px){}
+
+/****************************** donation-section1 content1 ******************************/
+.donation-section1 {}
+.donation-section1 .dona_inner {}
+.donation-section1 .dona_inner .donation-txt {text-align: center; padding: 3rem 0;}
+.donation-section1 .dona_inner .donation-txt .bg_txt {font-weight: 600; color: rgba(0,0,0,0.1); padding-bottom: 1.5rem;}
+
+.donation-section1 .dona_inner .donation-txt h1 {font-size: 2rem; text-align: center; position: relative; display: inline-block; padding-bottom: 3rem;}
+.donation-section1 .dona_inner .donation-txt h1::before {content: ""; position: absolute; left: 0; bottom: 0; height: 1.2rem; background-color: #A3DCDA;}
+.donation-section1 .dona_inner .donation-txt h1 > mark {font-size: 2.3rem; font-weight: 500; background-color: #A3DCDA; height: 1rem; position: relative;}
+
+.donation-txt .desc { line-height: 1.5; font-size: 1rem;}
+
+
+/* listBox */
+.donation-section1 .listbox {width: 100%; display: flex; flex-direction: column; margin: 0 auto;}
+.donation-section1 .listbox .list {width: 92%; display:block; padding: 2rem; margin: 0 auto;}
+.donation-section1 .listbox .list:nth-child(1) {background-color: rgb(200, 227, 26);}
+.donation-section1 .listbox .list:nth-child(2) {background-color: #ee8230;}
+.donation-section1 .listbox .list:nth-child(3) {background-color: rgb(91, 217, 255);}
