@@ -42,15 +42,57 @@ width: 30%; height: 30vh; background-size: 100%; z-index: 99;}
 .donation-section1 .dona_inner .donation-txt .bg_txt {font-weight: 600; color: rgba(0,0,0,0.1); padding-bottom: 1.5rem;}
 
 .donation-section1 .dona_inner .donation-txt h1 {font-size: 2rem; text-align: center; position: relative; display: inline-block; padding-bottom: 3rem;}
-.donation-section1 .dona_inner .donation-txt h1::before {content: ""; position: absolute; left: 0; bottom: 0; height: 1.2rem; background-color: #A3DCDA;}
-.donation-section1 .dona_inner .donation-txt h1 > mark {font-size: 2.3rem; font-weight: 500; background-color: #A3DCDA; height: 1rem; position: relative;}
+
+.donation-section1 .dona_inner .donation-txt h1 > mark { font-weight:bold; position:relative; display: inline-block; color: #212121;}
+.donation-section1 .dona_inner .donation-txt h1 > mark::before{ content: ""; position: absolute; left: 0; bottom:0px; width: 100%; height: 14px; background-color: #9ce8e7; z-index: -1;}
+mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 
 .donation-txt .desc { line-height: 1.5; font-size: 1rem;}
 
 
-/* listBox */
-.donation-section1 .listbox {width: 100%; display: flex; flex-direction: column; margin: 0 auto;}
-.donation-section1 .listbox .list {width: 92%; display:block; padding: 2rem; margin: 0 auto;}
-.donation-section1 .listbox .list:nth-child(1) {background-color: rgb(200, 227, 26);}
-.donation-section1 .listbox .list:nth-child(2) {background-color: #ee8230;}
-.donation-section1 .listbox .list:nth-child(3) {background-color: rgb(91, 217, 255);}
+/******************************* Slider *******************************/
+#slider {width: 100%; display: flex; flex-direction: column; margin: 0 auto;}
+.layout .list {width: 92%; display:block; padding: 2rem; margin: 0 auto 5rem; position: relative; border-radius: 3rem 3rem 3rem 0;}
+.layout .list:nth-child(2) {border-radius: 3rem 3rem 0 3rem;}
+.layout .list > div {color: #fff;}
+.layout .list > div > span {color: #fff;}
+.layout .list > img { width:6rem; height: 6rem; position: absolute; right: 2rem; bottom: 5rem;}
+.layout .list:nth-child(1) {background-color: #0BC9C3;}
+.layout .list:nth-child(2) {background-color: #FFC876;}
+.layout .list:nth-child(3) {background-color: #8E8AFF;}
+.layout .list .title {font-size: 1.8rem; font-weight: 500; padding-bottom: 1.2rem ;}
+.layout .list .middtit {font-size: 1.3rem; line-height: 2rem; padding-bottom: 7rem;}
+.layout .list .info { line-height: 1.4; opacity: 0.8;}
+.layout .desc {}
+
+
+/******************************* diversify *******************************/
+.diversify_wrap { background-color: #FAFAFA; padding: 5rem 0;}
+.diversify_wrap .diver_inner .desc-txt { padding-bottom: 3rem;}
+.diversify_wrap .diver_inner .desc-txt > h2 {font-size: 1.2rem; font-weight: 500; color: #2D2D2D; padding-bottom: 2rem;}
+.diversify_wrap .diver_inner .desc-txt .stit {font-size: 1.4rem; font-weight: bold; padding-bottom: 2.5rem; line-height: 1.8rem;}
+.diversify_wrap .diver_inner .desc-txt .stit > span {font-weight: bold; color: #00B1B3;}
+.diversify_wrap .diver_inner .desc-txt .desc { line-height: 1.4;}
+/* category */
+.cate_wrap {}
+.cate_wrap .cate_tit {font-size: 1.3rem; font-weight: bold; padding-bottom: 1.5rem;}
+.category {display: flex; justify-content: space-between;}
+.category > li { display: inline-block; background-color: #fff; color: #000; padding: 2% 4%;
+border: 1px solid #AEABAB; border-radius: 50px; }
+
+
+
+/******************************* App Download *******************************/
+.app-download { background-color:#00B1B3; text-align: center;}
+.app-download .down_inner { position: relative; padding: 2rem;}
+.app-download .down_inner .txt > div { color: #fff;}
+.app-download .down_inner .txt .tit {font-size: 2rem; padding-bottom: 1rem ; font-weight: 500;}
+.app-download .down_inner .txt .middtit { padding-bottom: 1rem;}
+
+/* download-btn */
+.down-btn {flex-direction: column; }
+.down-btn .btn { width: 100%; margin: 0 1%; vertical-align: top; border-radius: 2rem;  margin: 1%; 
+    display: flex; align-items: center; justify-content: center; background-color: #fff;}
+.down-btn > div > a { display: flex; justify-content: center; align-items: center; padding: 10px; color: inherit; text-decoration: none; cursor: pointer;}
+.down-btn > div > a > img {width: 20px; height: 20px;}
+.down-btn .btn > a > span {font-weight: 500;}
