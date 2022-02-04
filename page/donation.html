@@ -118,7 +118,7 @@
           <option value="" class="mater">재능기부
             <span class="down"><img src="/jadu_website/images/arrow_drop_down_black.svg" alt="드롭다운 화살표"></span></option>
           <option value="">자두MD</option>
-          <option value="">현물기부</option>
+          <!-- <option value="">현물기부</option> -->
         </select>
       </div>
 
@@ -126,122 +126,192 @@
         <ul>
           <li><a href="">재능기부</a></li>
           <li><a href="">자두MD</a></li>
-          <li><a href="">현물기부</a></li>
+          <!-- <li><a href="">현물기부</a></li> -->
         </ul>
       </div>
     </div>
 
-    <!-- 자두 재능기부란? -->
-    <div class="donation-section1 content">
-      <div class="dona_inner content_inner">
-        <div class="donation-txt">
-          <div class="bg_txt" lang="en">Donation Platform</div>
-          <h1><mark>자두 재능기부란?</mark></h1>
-          <p class="desc">문화, 예술 언어부터 학업, 취미 일상, 직업까지<br>꼭 특별하지 않아도 자신이 할 수 있는<br>무엇이라도 나눌 수 있습니다.</p>
-        </div>
-
-        <!-- 재능기부 슬라이더 -->
-        <div id="slider">
-
-          <div class="layout01">
-            <div class="list list01">
-              <div class="title">도와주세요</div>
-              <div class="middtit">어린이집에서 바이올린<br>가르쳐 주실 분 필요해요!</div>
-              <img src="/jadu_website/images/dona_item01.svg">
-              <div class="info">날짜 : <span lang="en">2022</span>년 <span lang="en">3</span>월 <span lang="en">20</span>일 오전
-                <span lang="en">10</span>시~<span lang="en">12</span>시<br>
-                장소 : 자두광역시 두두구 푸르니동</div>
-            </div>
-            <div class="desc">우리지역의 뛰어난 인재들의 도움이 필요하신가요? 자신의 재능을 기부하기 위해 모인 능력자분들에게 재능을 요청해보세요!</div>
+    <div class="wrap_inner">
+      <!-- 자두 재능기부란? -->
+      <div class="donation-section1 content">
+        <div class="dona_inner content_inner">
+          <div class="donation-txt">
+            <div class="bg_txt" lang="en">Donation Platform</div>
+            <h1><mark>자두 재능기부란?</mark></h1>
+            <p class="desc">문화, 예술 언어부터 학업, 취미 일상, 직업까지<br>꼭 특별하지 않아도 자신이 할 수 있는<br>무엇이라도 나눌 수 있습니다.</p>
           </div>
-              
+
+          <!-- 재능기부 슬라이더 -->
+          <!--출처 <h6>https://www.w3schools.com/howto/howto_js_slideshow.asp</h6> -->
+          <!-- -->
+
+          <!--container {-->
+          <section id="container">
+            <div class="conta_inner">
+              <div class="arrow prev" onclick="prevNext(-1)">&#10094;</div>
+              <div class="arrow next" onclick="prevNext(1)">&#10095;</div>
+
+              <div class="slideNum">
+                <span id="thisSlide">0</span> / <span id="allSlide">0</span>
+              </div>
+
+              <article class="slides">
+                <div class="layout01">
+                  <div class="list list01">
+                    <div class="title">도와주세요</div>
+                    <div class="middtit">어린이집에서 바이올린<br>가르쳐 주실 분 필요해요!</div>
+                    <img src="/jadu_website/images/dona_item01.svg">
+                    <div class="info">날짜 : <span lang="en">2022</span>년 <span lang="en">3</span>월 <span
+                        lang="en">20</span>일
+                      오전
+                      <span lang="en">10</span>시~<span lang="en">12</span>시<br>
+                      장소 : 자두광역시 두두구 푸르니동</div>
+                  </div>
+                  <div class="desc">우리지역의 뛰어난 인재들의 도움이 필요하신가요? 자신의 재능을 기부하기 위해 모인 능력자분들에게 재능을 요청해보세요!</div>
+                </div>
+              </article>
+              <!--1-->
+              <article class="slides">
+                <div class="layout01">
+                  <div class="list list02">
+                    <div class="title">도와줄게요</div>
+                    <div class="middtit">바이올린 도움 필요하신 분<br>도와드릴게요.</div>
+                    <img src="/jadu_website/images/dona_item02.svg">
+                    <div class="info">날짜 : <span lang="en">2022</span>년 <span lang="en">3</span>월 <span
+                        lang="en">20</span>일
+                      오전
+                      <span lang="en">10</span>시~<span lang="en">12</span>시<br>
+                      장소 : 자두광역시 두두구 푸르니동</div>
+                  </div>
+                  <div class="desc">여러분의 능력과 기술을 활용해 지역사회에서 여러분의 도움이 필요한 곳에 재능을 기부해보세요!</div>
+                </div>
+              </article>
+              <!--2-->
+              <article class="slides">
+                <div class="layout01">
+                  <div class="list list03">
+                    <div class="title">함께해요</div>
+                    <div class="middtit">어린이집에서 바이올린<br>도움을 주실 분 있으신가요?</div>
+                    <img src="/jadu_website/images/dona_item03.svg">
+                    <div class="info">날짜 : <span lang="en">2022</span>년 <span lang="en">3</span>월 <span
+                        lang="en">20</span>일
+                      오전
+                      <span lang="en">10</span>시~<span lang="en">12</span>시<br>
+                      장소 : 자두광역시 두두구 푸르니동</div>
+                  </div>
+                  <div class="desc">봉사활동부터 협업, 멘토링까지 마음 맞는 이웃들과 함께 재능을 나누세요!</div>
+                </div>
+              </article>
+              <!--3-->
+            </div>
+            <!--//conta_inner  -->
+
             
-          <div class="layout01">
-            <div class="list list02">
-              <div class="title">도와줄게요</div>
-              <div class="middtit">바이올린 도움 필요하신 분<br>도와드릴게요.</div>
-              <img src="/jadu_website/images/dona_item02.svg">
-              <div class="info">날짜 : <span lang="en">2022</span>년 <span lang="en">3</span>월 <span lang="en">20</span>일 오전
-                <span lang="en">10</span>시~<span lang="en">12</span>시<br>
-                장소 : 자두광역시 두두구 푸르니동</div>
+
+                      <!--pager {-->
+          <section id="pager">
+            <span class="dots on" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+
+          </section>
+          <!--pager }-->
+          </section><!-- } container-->
+
+          <!-- 786이상 보이는 화면 -->
+          
+          <!--768이상 보이는 화면-->
+          <div class="boxWrap">
+            <div class="section01">
+              <div class="box">
+                <div class="title01">도와주세요</div>
+                  <div class="middtit01">어린이집에서 바이올린<br>가르쳐 주실 분 필요해요!</div>
+                  <img src="/jadu_website/images/dona_item01.svg">
+                  <div class="info01">날짜 : <span lang="en">2022</span>년 <span lang="en">3</span>월 <span
+                      lang="en">20</span>일
+                    오전
+                    <span lang="en">10</span>시~<span lang="en">12</span>시<br>
+                    장소 : 자두광역시 두두구 푸르니동</div>
+                </div>
+                <div class="desc01">우리지역의 뛰어난 인재들의 도움이 필요하신가요? 자신의 재능을 기부하기 위해 모인 능력자분들에게 재능을 요청해보세요!</div>
+              </div>
+              </div>
+              <div class="txt"></div>
             </div>
-            <div class="desc">여러분의 능력과 기술을 활용해 지역사회에서 여러분의 도움이 필요한 곳에 재능을 기부해보세요!</div>
           </div>
 
 
-          <div class="layout01">
-            <div class="list list03">
-              <div class="title">함께해요</div>
-              <div class="middtit">어린이집에서 바이올린<br>도움을 주실 분 있으신가요?</div>
-              <img src="/jadu_website/images/dona_item03.svg">
-              <div class="info">날짜 : <span lang="en">2022</span>년 <span lang="en">3</span>월 <span lang="en">20</span>일 오전
-                <span lang="en">10</span>시~<span lang="en">12</span>시<br>
-                장소 : 자두광역시 두두구 푸르니동</div>
+
+
+
+          <!-- <section class="slideStopStart" onclick="stopSlide()">STOP SLIDES</section>
+  <section class="slideStopStart" onclick="showSlides()">RESTART SLIDES</section> -->
+
+
+          <!-- deco 이미지 -->
+          <div class="character01"><img src="../images/character01.svg" alt="프루니"></div>
+
+          <!-- 재능기부의 다양화 -->
+          <div class="diversify_wrap">
+            <div class="diver_inner content_inner">
+              <div class="desc-txt">
+                <h2>재능기부의 다양화</h2>
+                <div class="stit"><span>키오스크</span>를 사용할 줄 모르는 어르신이<br><span>당신의 도움</span>을 기다리고 있어요!</div>
+                <div class="desc">문화, 예술, 언어부터 학업, 취미, 일상, 직업까지<br>
+                  당신이 소소하게 여기던 모든 것들이<br>
+                  사실 굉장히 특별한 것일 수 있습니다.<br>
+                  자두 재능 기부를 통해 다양한 방식으로<br>
+                  여러분의 재능을 나누어 주세요!</div>
+              </div>
+
+
+              <!-- 카테고리 -->
+              <div class="cate_wrap">
+                <div class="cate_tit">다양한 재능기부 카테고리</div>
+                <ul class="category">
+                  <li>키오스크</li>
+                  <li>음악</li>
+                  <li>글쓰기</li>
+                  <li>언어</li>
+                  <li>생활연기</li>
+                </ul>
+              </div>
+
+              <!-- deco 이미지 -->
+              <div class="character02"><img src="../images/character02.svg" alt="두두"></div>
+
             </div>
-            <div class="desc">봉사활동부터 협업, 멘토링까지 마음 맞는 이웃들과 함께 재능을 나누세요!</div>
+          </div>
+
+
+          <!-- 자두 앱 다운로드 -->
+          <div class="app-download">
+            <div class="down_inner content_inner">
+              <div class="txt">
+                <div class="tit">자두 앱 다운로드</div>
+                <div class="middtit">더 다양한 재능기부 카테고리를<br>자두 앱에서 만나보세요!</div>
+              </div>
+              <div class="down-btn">
+                <div class="apple btn">
+                  <a href="#">
+                    <img src="/jadu_website/images/logo_apple.svg" alt="애플 로고">
+                    <span lang="en">App Store</span>
+                  </a>
+                </div>
+                <div class="google btn">
+                  <a href="#">
+                    <img src="/jadu_website/images/logo_googleplay.svg" alt="구글플레이 로고">
+                    <span lang="en">Google Play</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
+        <!-- wrap_inner// -->
       </div>
-    </div>
-
-    <!-- 재능기부의 다양화 -->
-    <div class="diversify_wrap">
-      <div class="diver_inner content_inner">
-        <div class="desc-txt">
-          <h2>재능기부의 다양화</h2>
-          <div class="stit"><span>키오스크</span>를 사용할 줄 모르는 어르신이<br><span>당신의 도움</span>을 기다리고 있어요!</div>
-          <div class="desc">문화, 예술, 언어부터 학업, 취미, 일상, 직업까지<br>
-            당신이 소소하게 여기던 모든 것들이<br>
-            사실 굉장히 특별한 것일 수 있습니다.<br>
-            자두 재능 기부를 통해 다양한 방식으로<br>
-            여러분의 재능을 나누어 주세요!</div>
-        </div>
-
-
-        <!-- 카테고리 -->
-        <div class="cate_wrap">
-          <div class="cate_tit">다양한 재능기부 카테고리</div>
-          <ul class="category">
-            <li>키오스크</li>
-            <li>음악</li>
-            <li>글쓰기</li>
-            <li>언어</li>
-            <li>생활연기</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- 자두 앱 다운로드 -->
-    <div class="app-download">
-      <div class="down_inner content_inner">
-        <div class="txt">
-          <div class="tit">자두 앱 다운로드</div>
-          <div class="middtit">더 다양한 재능기부 카테고리를<br>자두 앱에서 만나보세요!</div>
-        </div>
-        <div class="down-btn">
-          <div class="apple btn">
-            <a href="#">
-              <img src="/jadu_website/images/logo_apple.svg" alt="애플 로고">
-              <span lang="en">App Store</span>
-            </a>
-          </div>
-          <div class="google btn">
-            <a href="#">
-              <img src="/jadu_website/images/logo_googleplay.svg" alt="구글플레이 로고">
-              <span lang="en">Google Play</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-  <!-- wrap end -->
+      <!-- wrap end -->
 </body>
 
 </html>
