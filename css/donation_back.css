@@ -15,7 +15,6 @@
 .donation_banner .layout .decowrap .deco2 {position:absolute; left:0; bottom:0; background: url(../images/deco01.svg); width: 120px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom left;}
 .donation_banner .layout .decowrap .deco3 {position:absolute; right:0; bottom:0; background: url(../images/deco03.svg); width: 180px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom right;}
 
-/****************************** tap menu ******************************/
 .tabs .tab-select {}
 .tabs .tab-select select {appearance:none; 
     width: 100%; padding: 1.6rem; 
@@ -25,19 +24,7 @@
 
 @media screen and (min-width: 1200px) {}
 
-@media all and (min-width: 1024px) {
-    .donation_banner{height: 50vh;}
-    .donation_banner .layout .decowrap .deco1 {position:absolute; left:7rem; bottom:0; background: url(../images/deco02.svg); background-repeat: no-repeat; background-position: 18% bottom; width: 120px; height: 240px ; background-size: 80%; z-index: 99;}
-    .donation_banner .layout .decowrap .deco2 {position:absolute; left:2rem; bottom:0; background: url(../images/deco01.svg); width: 120px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom left;}
-    .donation_banner .layout .decowrap .deco3 {position:absolute; right:2rem; bottom:0; background: url(../images/deco03.svg); width: 180px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom right;}
-
-    .tabs .tab-select {display: none;}
-    .tabs .tab-button {  text-align: center;   display: flex;}
-    .tabs .tab-button > ul {display: flex; width: 100%;}
-    .tabs .tab-button > ul > li { width: 50%; border: 1px solid rgba(0,0,0,0.1); padding: 1.6rem; cursor: pointer; }
-    .tabs .tab-button > ul > li > a {font-size: 1.2rem; padding: 1.6rem; }
-    .tabs .tab-button > ul > li > a:hover, .tabs .tab-button > ul > li > a:active {color: #00B1B3;}
-}
+@media all and (min-width: 1024px) {}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .donation_banner{height: 60vh;}
@@ -53,7 +40,7 @@
 
 /****************************** donation-section1 content1 ******************************/
 .donation-section1 {}
-.donation-section1 .dona_inner {padding: 0;}
+.donation-section1 .dona_inner {}
 .donation-section1 .dona_inner .donation-txt {text-align: center; padding: 3rem 0;}
 .donation-section1 .dona_inner .donation-txt .bg_txt {font-weight: 600; color: rgba(0,0,0,0.1); padding-bottom: 1.5rem;}
 
@@ -65,13 +52,13 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 
 .donation-txt .desc { line-height: 1.5; font-size: 1rem;}
 
-.donaList {display: none;}
-.infomation { width: 90%; margin: 3rem auto 0;}
-.num {font-size: 3rem; font-weight: bold; color: rgba(0,0,0,0.1); text-align: left; padding: 0 10px 20px;}
-.no2 { text-align: center;}
-.no3 {text-align: right; padding-right: 30px;}
-.layout01 {padding-bottom: 3rem;}
-.layout01 .list {display:block; padding: 2rem; margin: 2rem auto 1.4rem; position: relative; border-radius: 3rem 3rem 3rem 0;}
+
+/******************************* Slider *******************************/
+/* #container {width: 100%; display: flex; flex-direction: column; margin: 0 auto;} */
+#container .conta_inner {width: 90%; margin: 0 auto;}
+.boxWrap{display: none;}
+.layout01 {padding-bottom: 3rem; }
+.layout01 .list {display:block; padding: 2rem; margin: 0 auto 1.4rem; position: relative; border-radius: 3rem 3rem 3rem 0;}
 .layout01 .list.list02 {border-radius: 3rem 3rem 0 3rem;}
 .layout01 .list > div {color: #fff;}
 .layout01 .list > div > span {color: #fff;}
@@ -82,31 +69,63 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 .layout01 .list .title {font-size: 1.8rem; font-weight: 500; padding-bottom: 1.2rem;}
 .layout01 .list .middtit {font-size: 1.3rem; line-height: 2rem; padding-bottom: 7rem;}
 .layout01 .list .info {line-height: 1.4; opacity: 0.8; font-size: 0.9rem;}
-.layout01 .desc {border-bottom: 1px dashed rgba(0,0,0,0.2); padding-bottom: 1.2rem; line-height: 1.6rem; width: 92%; margin: 0 auto;}
+.layout01 .desc {border-top: 1px dashed rgba(0,0,0,0.2); padding-top: 1rem; line-height: 1.6rem; font-size: 1.1rem;}
 
 
+/*==========*/
+#container{
+    position:relative;box-sizing:border-box;overflow:hidden;margin:2rem auto 0 auto;
+    width:100%; height:70vh;}
+ 
+
+/*pager*/
+.arrow{
+    position:absolute;z-index:200;box-sizing:border-box;
+    top:30%;transform:translateY(-30%);
+    padding:0.2rem 1.4rem 2rem 0.8rem;
+    background-color:rgba(0,0,0,0.3);
+    font-size:1.2rem;color:#fff;
+    cursor:pointer;
+    border-radius: 50px;}
+    
+    .arrow.prev{left:0;}
+    .arrow.next{right:0;}
+
+/*slideNUM*/
+.slideNum{ display: none;
+    /* position:absolute;z-index:100;top:1.5rem;left:2rem;
+    color:#fff;font-weight:bold;
+    text-shadow:2px 2px 5px rgba(0,0,0,1);*/ } 
+
+#thisSlide{color:crimson;}
+
+/*slides*/
+.slides{
+    overflow:hidden;width:100%;height:63vh; border: none;
+    animation:fadein 1.5s;}
+@keyframes fadein{
+    from{opacity:0.4;}
+    to{opacity:1;}}
+
+/*=============*/
+#pager{position:relative;margin-top:rem;text-align:center;}
+
+#pager span{position:relative;display:inline-block;width:1rem;height:1rem;background-color:rgba(0,0,0,0.4);border-radius:100%;cursor:pointer;transition:width 0.3s;}
+#pager span.on{background-color: #00B1B3;}
+
+/*===============*/
+/* .slideStopStart{position:relative;text-align:center;font-weight:bold;padding:0.5rem 0;background-color:#666;color:#fff;margin-top:1rem;cursor:pointer;} */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .layout01 .list {padding: 3rem;}
-  .layout01 .list > img { right:3rem; top:5.5rem; width: 7.5rem; height: 7.5rem;}
-  .layout01 .list .middtit {padding-bottom: 2rem;}
+    #container {display: none;}
+    .boxWrap {display: flex; width: 40%;}
+    .boxWrap .section01 {}
+    .boxWrap .section01 .box {background-color: #0BC9C3; position: relative; border-radius: 3rem 3rem 3rem 0; display:block; padding: 2rem; }
+    
+    .boxWrap .section01 > img { width:6rem; height: 6rem; position: absolute; right: 2rem; bottom: 5rem;}
+    
 }
 
-@media all and (min-width: 1024px) {
-    .infomation {display: none;}
-    .donaList {display: block; width: 70%; margin: 0 auto; }
-    .donaList > li {display: flex;}
-    .donaList .box {background-color: #0BC9C3; position: relative; border-radius: 3rem 3rem 3rem 0; padding: 3rem; width: 50%; margin-right: 2rem;}
-    .donaList .box > div {color: #fff;}
-    .donaList .box > div > span {color: #fff;}
-    .donaList .box .title {font-size: 1.8rem; font-weight: 500; padding-bottom: 1.2rem;}
-    .donaList .box .middtit {font-size: 1.2rem; line-height: 2rem; padding-bottom: 7rem;}
-    .donaList .box .info {line-height: 1.4; opacity: 0.8; font-size: 0.9rem;}
-    .donaList .box > img {width:6rem; height: 6rem; position: absolute; right: 2rem; bottom: 7rem;}
-    .donaList .desc { background-color: rosybrown; text-align: right; padding-top: 4rem;}
-    .donaList .desc .num {display: inline-block;}
-    .donaList .desc .txt {font-size: 1.1rem; line-height: 1.7; padding-top: 2rem;}
-}
 
 
 
@@ -125,12 +144,6 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 .category > li { display: inline-block; background-color: #fff; color: #000; padding: 2% 4%;
 border: 1px solid #AEABAB; border-radius: 50px; font-size: 0.9rem;}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .diversify_wrap .diver_inner {width: 96%;}
-    
-    .category {width: 50%;}
-
-}
 
 
 /******************************* App Download *******************************/
@@ -149,16 +162,9 @@ border: 1px solid #AEABAB; border-radius: 50px; font-size: 0.9rem;}
 .down-btn > div > a > img {width: 20px; height: 20px;}
 .down-btn .btn > a > span {font-weight: 500;}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .down-btn {flex-direction: row; display: flex; width: 80%; margin: 0 auto; justify-content: space-between;}
-    .down-btn .btn {}
-    .down-btn .btn:nth-child(1) {margin-right: 10px;}
-}
-
-
 /******************************* 캐릭터 애니메이션 *******************************/
 .wrap_inner {position: relative; width: 100%;}
-.character01 {position: absolute; bottom: 56rem; right: 0.9rem; width: 4rem;
+.character01 {position: absolute; top: 52rem; right: 0.9rem; width: 4rem;
 animation-name: pruny;
 animation-duration: 1s;
 animation-timing-function: ease-in-out;
@@ -166,8 +172,8 @@ animation-iteration-count: infinite;
 animation-direction: alternate;
 }
 @keyframes pruny {
-    0% {right: 0.7rem; bottom:56rem;}
-    100% {right: 0.9rem; bottom:58rem;}
+    0% {right: 0.7rem; top:51rem;}
+    100% {right: 0.9rem; top:52rem;}
 }
 .character02 {position: absolute; bottom: 20rem; left: 0; width: 6rem;
 animation-name: dudu;

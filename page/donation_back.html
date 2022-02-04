@@ -21,7 +21,7 @@
     <header class="header">
       <div class="header-inner">
 
-        <h1 class="logo"><a href="../index.html">
+        <h1 class="logo"><a href="">
             <svg width="147" height="42" viewBox="0 0 147 42" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M25.1084 13.7812C24.8721 13.7782 24.6405 13.711 24.4366 13.5863C24.2327 13.4616 24.0635 13.2837 23.9457 13.07C22.6821 10.7668 22.6472 7.77665 23.8526 5.08147C25.0581 2.3863 27.2751 0.491188 29.7828 0.0184212C30.0581 -0.028347 30.3404 0.0144478 30.5915 0.14098C30.8426 0.267511 31.0501 0.471632 31.1859 0.725551C32.4534 3.02877 32.4883 6.01892 31.279 8.7141C30.0697 11.4093 27.8565 13.3044 25.3488 13.7772C25.2688 13.7843 25.1885 13.7857 25.1084 13.7812V13.7812ZM29.2402 3.15C27.944 3.81924 26.9048 4.92833 26.2933 6.29495C25.6819 7.66158 25.5347 9.2044 25.8759 10.6698C27.1711 9.99944 28.2095 8.89019 28.8208 7.52391C29.4321 6.15763 29.58 4.61539 29.2402 3.15V3.15Z"
@@ -141,11 +141,22 @@
             <p class="desc">문화, 예술 언어부터 학업, 취미 일상, 직업까지<br>꼭 특별하지 않아도 자신이 할 수 있는<br>무엇이라도 나눌 수 있습니다.</p>
           </div>
 
-          <!-- 재능기부 종류 박스 -->
-              <article class="infomation">
-                <div class="num no1" lang="en">01</div>
+          <!-- 재능기부 슬라이더 -->
+          <!--출처 <h6>https://www.w3schools.com/howto/howto_js_slideshow.asp</h6> -->
+          <!-- -->
+
+          <!--container {-->
+          <section id="container">
+            <div class="conta_inner">
+              <div class="arrow prev" onclick="prevNext(-1)">&#10094;</div>
+              <div class="arrow next" onclick="prevNext(1)">&#10095;</div>
+
+              <div class="slideNum">
+                <span id="thisSlide">0</span> / <span id="allSlide">0</span>
+              </div>
+
+              <article class="slides">
                 <div class="layout01">
-                  <div class="desc">우리지역의 뛰어난 인재들의 도움이 필요하신가요? 자신의 재능을 기부하기 위해 모인 능력자분들에게 재능을 요청해보세요!</div>
                   <div class="list list01">
                     <div class="title">도와주세요</div>
                     <div class="middtit">어린이집에서 바이올린<br>가르쳐 주실 분 필요해요!</div>
@@ -156,14 +167,12 @@
                       <span lang="en">10</span>시~<span lang="en">12</span>시<br>
                       장소 : 자두광역시 두두구 푸르니동</div>
                   </div>
-                  
+                  <div class="desc">우리지역의 뛰어난 인재들의 도움이 필요하신가요? 자신의 재능을 기부하기 위해 모인 능력자분들에게 재능을 요청해보세요!</div>
                 </div>
               </article>
-              <!--//1-->
-              <article class="infomation">
-                <div class="num no2" lang="en">02</div>
+              <!--1-->
+              <article class="slides">
                 <div class="layout01">
-                  <div class="desc">여러분의 능력과 기술을 활용해 지역사회에서 여러분의 도움이 필요한 곳에 재능을 기부해보세요!</div>
                   <div class="list list02">
                     <div class="title">도와줄게요</div>
                     <div class="middtit">바이올린 도움 필요하신 분<br>도와드릴게요.</div>
@@ -174,14 +183,12 @@
                       <span lang="en">10</span>시~<span lang="en">12</span>시<br>
                       장소 : 자두광역시 두두구 푸르니동</div>
                   </div>
-                  
+                  <div class="desc">여러분의 능력과 기술을 활용해 지역사회에서 여러분의 도움이 필요한 곳에 재능을 기부해보세요!</div>
                 </div>
               </article>
-              <!--//2-->
-              <article class="infomation">
-                <div class="num no3" lang="en">03</div>
+              <!--2-->
+              <article class="slides">
                 <div class="layout01">
-                  <div class="desc">봉사활동부터 협업, 멘토링까지 마음 맞는 이웃들과 함께 재능을 나누세요!</div>
                   <div class="list list03">
                     <div class="title">함께해요</div>
                     <div class="middtit">어린이집에서 바이올린<br>도움을 주실 분 있으신가요?</div>
@@ -192,44 +199,54 @@
                       <span lang="en">10</span>시~<span lang="en">12</span>시<br>
                       장소 : 자두광역시 두두구 푸르니동</div>
                   </div>
-                  
+                  <div class="desc">봉사활동부터 협업, 멘토링까지 마음 맞는 이웃들과 함께 재능을 나누세요!</div>
                 </div>
               </article>
-              <!--//3-->
-
-              <!-- 재능기부 종류 박스 1024이상 보이는 화면 -->
-              <ul class="donaList">
-                <li>
-                  <div class="box box01">
-                    <div class="title">도와주세요</div>
-                    <div class="middtit">어린이집에서 바이올린<br>가르쳐주실 분 필요해요!</div>
-                    <img src="/jadu_website/images/dona_item01.svg">
-                    <div class="info">날짜 : <span lang="en">2022</span>년 <span lang="en">3</span>월 <span
-                        lang="en">20</span>일
-                      오전
-                      <span lang="en">10</span>시~<span lang="en">12</span>시<br>
-                      장소 : 자두광역시 두두구 푸르니동</div>
-                  </div>
-                  <div class="desc">
-                    <div class="num no1" lang="en">01</div>
-                    <div class="txt">우리지역의 뛰어난 인재들의 도움이 필요하신가요?<br>자신의 재능을 기부하기 위해 모인 능력자분들에게 재능을 요청해보세요!</div>
-                  </div>
-                </li>
-              </ul>
-            
+              <!--3-->
+            </div>
+            <!--//conta_inner  -->
 
             
 
-         
+                      <!--pager {-->
+          <section id="pager">
+            <span class="dots on" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+
+          </section>
+          <!--pager }-->
+          </section><!-- } container-->
+
           
           
-    
+          <!--768이상 보이는 화면-->
+          <div class="boxWrap">
+            <div class="section01">
+              <div class="box">
+                <div class="title">도와주세요</div>
+                  <div class="middtit">어린이집에서 바이올린<br>가르쳐 주실 분 필요해요!</div>
+                  <img src="/jadu_website/images/dona_item01.svg">
+                  <div class="info">날짜 : <span lang="en">2022</span>년 <span lang="en">3</span>월 <span
+                      lang="en">20</span>일
+                    오전
+                    <span lang="en">10</span>시~<span lang="en">12</span>시<br>
+                    장소 : 자두광역시 두두구 푸르니동</div>
+                </div>
+                <div class="desc">우리지역의 뛰어난 인재들의 도움이 필요하신가요? 자신의 재능을 기부하기 위해 모인 능력자분들에게 재능을 요청해보세요!</div>
+              </div>
+              </div>
+              <div class="txt"></div>
+            </div>
+          </div>
 
 
 
 
 
-        
+          <!-- <section class="slideStopStart" onclick="stopSlide()">STOP SLIDES</section>
+  <section class="slideStopStart" onclick="showSlides()">RESTART SLIDES</section> -->
+
 
           <!-- deco 이미지 -->
           <div class="character01"><img src="../images/character01.svg" alt="프루니"></div>
