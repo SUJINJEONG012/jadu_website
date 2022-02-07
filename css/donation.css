@@ -54,17 +54,16 @@
 
 /****************************** donation-section1 content1 ******************************/
 .donation-section1 {}
-.donation-section1 .dona_inner {padding: 0;}
+.donation-section1 .dona_inner {padding: 0; background: url(../images/Ellipse01.svg) no-repeat right 16%, url(../images/Ellipse02.svg) no-repeat left 50%;}
+/*decoration*/
+
 .donation-section1 .dona_inner .donation-txt {text-align: center; padding: 6rem 0;}
 .donation-section1 .dona_inner .donation-txt .bg_txt {font-weight: 600; color: rgba(0,0,0,0.1); padding-bottom: 1.5rem;}
-
 .donation-section1 .dona_inner .donation-txt h1 {font-size: 2rem; text-align: center; position: relative; display: inline-block; padding-bottom: 3rem;}
-
 .donation-section1 .dona_inner .donation-txt h1 > mark { font-weight:bold; position:relative; display: inline-block; color: #212121;}
 .donation-section1 .dona_inner .donation-txt h1 > mark::before{ content: ""; position: absolute; left: 0; bottom:0px; width: 100%; height: 14px; background-color: #9ce8e7; z-index: -1;}
 mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
-
-.donation-txt .desc { line-height: 1.5; font-size: 1rem;}
+.donation-txt .desc { line-height: 1.5; font-size: 1rem; width: 70%; margin: 0 auto;}
 
 .donaList {display: none;}
 .infomation { width: 90%; margin: 4rem auto 0;}
@@ -91,13 +90,18 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .donation-section1 .dona_inner .donation-txt h1 {font-size: 2.2rem;}
+    .donation-section1 .dona_inner .donation-txt .desc {font-size: 1.1rem; line-height: 1.8;}
     .num {text-align: center;}
-  .layout01 .list {padding: 3rem;}
-  .layout01 .list > img { right:3rem; top:5.5rem; width: 7.5rem; height: 7.5rem;}
-  .layout01 .list .middtit {padding-bottom: 2rem;}
+    .layout01 .list {padding: 3rem;}
+    .layout01 .list > img { right:3rem; top:5.5rem; width: 7.5rem; height: 7.5rem;}
+    .layout01 .list .middtit {padding-bottom: 2rem;}
+
 }
 
 @media all and (min-width: 1024px) {
+    .donation-section1 .dona_inner {padding: 0; background: url(../images/Ellipse01.svg) no-repeat right 20%, url(../images/Ellipse02.svg) no-repeat left 40%;}
+
     .infomation {display: none;}
     .donaList {display: block; width: 80%; margin: 5rem auto; }
     .donaList > li {display: flex; justify-content: space-between; margin-bottom: 15rem;}
@@ -114,8 +118,7 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
     .donaList .box > img {width:6rem; height: 6rem; position: absolute; right: 2rem; bottom: 7rem;}
     .donaList .desc { text-align: right; padding-top: 4rem;}
     .donaList .desc .num {display: block; text-align: right;}
-    .donaList .desc .num::before {content: ""; display: block; flex-grow: 1; margin: 0 16px; background-color: #000; height: 1px; font-size: 0px; line-height: 0px;}
-
+    .donaList .desc .num::after {content: ""; display: block;width: 26rem; background-color: rgba(0,0,0,0.1); height: 1px; font-size: 0px; line-height: 0px;}
     .no3 {padding-right: 0;}
 
     .donaList .desc .txt {font-size: 1.2rem; line-height: 1.7; padding-top: 2rem; }
@@ -123,10 +126,26 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
     .donaList .desc02 > .no2 {text-align: left;}
     .donaList .desc02 > .txt02 {text-align: left; }
 
-    @media screen and (min-width: 1200px) {
-        .donaList { width: 60%;}
-    }
 }
+
+    @media screen and (min-width: 1200px) {
+        .donaList { width: 80%;}
+        .donaList .desc .num {font-size:5rem;}
+    }
+
+    @media screen and (min-width: 1400px) {
+        .donaList { width: 60%;}
+        .donaList .desc .num {font-size: 6rem;}
+        .donaList .desc .num::after {width: 30rem;}
+    }
+
+    @media screen and (min-width: 1600px) {
+        .donaList .desc .num::after{width: 30rem;}
+    }
+
+    @media screen and (min-width: 1800px) {
+        .donaList .desc .num::after{width: 40rem;}
+    }
 
 
 
@@ -142,7 +161,7 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 /* category */
 .cate_wrap {}
 
-.cate_wrap .cate_tit {font-size: 1.3rem; font-weight: bold; padding-bottom: 1.5rem;}
+.cate_wrap .cate_tit > p {font-size: 1.3rem; font-weight: bold; padding-bottom: 1.5rem;}
 .category {display: flex; justify-content: space-between; }
 .category > li { display: inline-block; background-color: #fff; color: #000; padding: 2% 4%; border: 1px solid #AEABAB; border-radius: 50px; font-size: 0.9rem;}
 .category_pc{display: none;}
@@ -178,12 +197,15 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
     .desc-txt .stit > p > span {font-size: 1.8rem;}
     .cate_wrap {display: flex; justify-content: space-between; align-items:baseline;}
     .category {display: none;}
+    .cate_tit > p {font-size: 1.6rem; font-weight: bold;}
     .category_pc{display: flex; justify-content: space-between; width: 72%;}
     .category_pc > li { display: inline-block; background-color: #fff; color: #000; padding: 2% 4%; border: 1px solid #AEABAB; border-radius: 50px; font-size: 0.9rem;}
-
-    
-
 }
+
+@media screen and (min-width: 1600px){
+    .category_pc > li{font-size: 1.2rem;}
+}
+
 /******************************* App Download *******************************/
 .app-download { background-color:#00B1B3; text-align: center;}
 .app-download .down_inner { position: relative; padding: 4rem 2rem;}
@@ -192,7 +214,7 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 .app-download .down_inner .txt .middtit { padding-bottom: 2rem; line-height: 1.4;}
 
 /* download-btn */
-.down-btn {flex-direction: column; }
+.down-btn {flex-direction: column; align-items: baseline;}
 .down-btn .btn { width: 100%; vertical-align: top; border-radius: 2rem;  
     display: flex; align-items: center; justify-content: center; background-color: #fff;}
 .down-btn .btn:nth-child(1) {margin-bottom: 2%;}
@@ -210,6 +232,10 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
     .down-btn {flex-direction: row; display: flex; width: 40%; margin: 0 auto; justify-content: space-between;}
     .down-btn .btn {}
     .down-btn .btn:nth-child(1) {margin-right: 10px;}
+}
+
+@media all and (min-width: 1600px) {
+    .down-btn {width: 600px;}
 }
 
 /******************************* 캐릭터 애니메이션 *******************************/
@@ -251,13 +277,37 @@ animation-direction: alternate;}
 }
 
 @media all and (min-width: 1024px) {
-    .character01 { bottom: 47rem; width: 5rem;}
+    .character01 { bottom: 47rem; width: 6rem;}
     @keyframes pruny{
         0% {bottom: 47rem;}
         100% {bottom:49rem;}
     }
     
     .character02 {bottom:-8rem; left: -8rem; width: 8rem;}
+    @keyframes dudu{
+        0% {bottom: -8rem;}
+        100% {bottom: -9rem;}
+    }
+}
+
+@media all and (min-width: 1400px) {
+
+    .character02 {bottom:-8rem; left: -12rem; width: 8rem;}
+    @keyframes dudu{
+        0% {bottom: -8rem;}
+        100% {bottom: -9rem;}
+    }
+}
+
+@media all and (min-width: 1800px) {
+
+    .character01 { bottom: 47rem; width: 7rem;}
+    @keyframes pruny{
+        0% {bottom: 47rem;}
+        100% {bottom:49rem;}
+    }
+
+    .character02 {bottom:-8rem; left: -16rem; width: 10rem;}
     @keyframes dudu{
         0% {bottom: -8rem;}
         100% {bottom: -9rem;}
