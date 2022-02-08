@@ -17,16 +17,17 @@
 
 /****************************** tap menu ******************************/
 .tabs .tab-select {}
-.tabs .tab-select select {appearance:none; 
-    width: 100%; padding: 1.6rem; 
-    text-align: center; 
-    font-size: 1.2rem; color: #00B1B3; border: 1px solid rgba(0,0,0,0.1);}
+.tabs .tab-select select {appearance:none; width: 100%; padding: 1.6rem; text-align: center; font-size: 1.2rem; color: #00B1B3; border: 1px solid rgba(0,0,0,0.1);}
 .tabs .tab-button {display: none;}
+
+
+    /* 띄어쓰기 */
+    .desc_br{display: block;}
 
 @media  (max-width: 280px){}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .donation_banner{height: 60vh;}
+    .donation_banner{height: 46vh;}
     .tabs .tab-select {display: none;}
     .tabs .tab-button {  text-align: center;   display: flex;}
     .tabs .tab-button > ul {display: flex; width: 100%;}
@@ -36,11 +37,10 @@
 }
 
 @media all and (min-width: 1024px) {
-    .donation_banner{height: 50vh;}
+    .donation_banner{height: 56vh;}
     .donation_banner .layout .decowrap .deco1 {position:absolute; left:7rem; bottom:0; background: url(../images/deco02.svg); background-repeat: no-repeat; background-position: 18% bottom; width: 120px; height: 240px ; background-size: 80%; z-index: 99;}
     .donation_banner .layout .decowrap .deco2 {position:absolute; left:2rem; bottom:0; background: url(../images/deco01.svg); width: 120px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom left;}
     .donation_banner .layout .decowrap .deco3 {position:absolute; right:2rem; bottom:0; background: url(../images/deco03.svg); width: 180px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom right;}
-
     .tabs .tab-select {display: none;}
     .tabs .tab-button {  text-align: center;   display: flex;}
     .tabs .tab-button > ul {display: flex; width: 100%;}
@@ -51,12 +51,10 @@
 
 @media screen and (min-width: 1200px) {}
 
-
 /****************************** donation-section1 content1 ******************************/
 .donation-section1 {}
 .donation-section1 .dona_inner {padding: 0; background: url(../images/Ellipse01.svg) no-repeat right 16%, url(../images/Ellipse02.svg) no-repeat left 50%;}
 /*decoration*/
-
 .donation-section1 .dona_inner .donation-txt {text-align: center; padding: 6rem 0;}
 .donation-section1 .dona_inner .donation-txt .bg_txt {font-weight: 600; color: rgba(0,0,0,0.1); padding-bottom: 1.5rem;}
 .donation-section1 .dona_inner .donation-txt h1 {font-size: 2rem; text-align: center; position: relative; display: inline-block; padding-bottom: 3rem;}
@@ -64,44 +62,40 @@
 .donation-section1 .dona_inner .donation-txt h1 > mark::before{ content: ""; position: absolute; left: 0; bottom:0px; width: 100%; height: 14px; background-color: #9ce8e7; z-index: -1;}
 mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 .donation-txt .desc { line-height: 1.5; font-size: 1rem; width: 70%; margin: 0 auto;}
-
 .donaList {display: none;}
 .infomation { width: 90%; margin: 4rem auto 0;}
 .infomation::after {content: ""; display: block; flex-grow: 1; margin: 0 16px; height: 1px; font-size: 0px; line-height: 0px; border-bottom: 1px dashed rgba(0,0,0,0.07);}
 .info03::after{display: none;}
 .info03 {padding-bottom: 5rem;}
-.num {font-size: 4rem; font-weight: bold; color: rgba(0,0,0,0.07); text-align: left; padding: 0 10px 20px;}
-.no2 { text-align: center;}
-.no3 {text-align: right; padding-right: 30px;}
+.num {font-size: 4rem; font-weight: bold; color: rgba(0,0,0,0.07); text-align: center; padding: 0 10px 20px;}
+.layout01 .txt{ line-height: 1.6rem; width: 90%; margin: 0 auto; font-size: 1.1rem; text-align: center;}
+/* .layout01 .txt .desc_mobile {display: block;}
+.layout01 .txt .desc_br {display: none;} */
 .layout01 {padding-bottom: 3rem;}
 .layout01 .list {display:block; padding: 2rem; margin: 2rem auto 1.4rem; position: relative; border-radius: 3rem 3rem 3rem 0;}
 .layout01 .list.list02 {border-radius: 3rem 3rem 0 3rem;}
-.layout01 .list > div {color: #fff;}
-.layout01 .list > div > span {color: #fff;}
-.layout01 .list > img { width:6rem; height: 6rem; position: absolute; right: 2rem; bottom: 5rem;}
 .layout01 .list.list01 {background-color: #0BC9C3;}
 .layout01 .list.list02 {background-color: #FFC876;}
 .layout01 .list.list03 {background-color: #8E8AFF;}
 .layout01 .list .title {font-size: 1.8rem; font-weight: 500; padding-bottom: 1.2rem;}
-.layout01 .list .middtit {font-size: 1.3rem; line-height: 2rem; padding-bottom: 7rem;}
-.layout01 .list .info {line-height: 1.4; opacity: 0.8; font-size: 0.9rem;}
-.layout01 .desc { line-height: 1.6rem; width: 92%; margin: 0 auto;}
-
-
+.layout01 .list .middtit {font-size: 1.1rem; line-height: 1.8rem; padding-bottom: 1.4rem;}
+.layout01 .list .info {line-height: 1.4; opacity: 0.8; font-size: 0.9rem; padding-bottom: 6rem;}
+.layout01 .list > div {color: #fff;}
+.layout01 .list > div > span {color: #fff;}
+.layout01 .list > img { width:6.2rem; height: 6.2rem; position: absolute; right: 2rem; bottom: 2rem;}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .donation-section1 .dona_inner .donation-txt h1 {font-size: 2.2rem;}
     .donation-section1 .dona_inner .donation-txt .desc {font-size: 1.1rem; line-height: 1.8;}
     .num {text-align: center;}
     .layout01 .list {padding: 3rem;}
-    .layout01 .list > img { right:3rem; top:5.5rem; width: 7.5rem; height: 7.5rem;}
+    .layout01 .list > img { right:4rem; top:4rem; width: 10rem; height: 10rem;}
     .layout01 .list .middtit {padding-bottom: 2rem;}
-
+    .layout01 .list .info {padding-bottom: 0;}
 }
 
 @media all and (min-width: 1024px) {
     .donation-section1 .dona_inner {padding: 0; background: url(../images/Ellipse01.svg) no-repeat right 20%, url(../images/Ellipse02.svg) no-repeat left 40%;}
-
     .infomation {display: none;}
     .donaList {display: block; width: 80%; margin: 5rem auto; }
     .donaList > li {display: flex; justify-content: space-between; margin-bottom: 15rem;}
@@ -109,23 +103,20 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
     .donaList .box01{background-color: #0BC9C3;}
     .donaList .box02{background-color: #FFC876;margin-right: 0; border-radius: 3rem 3rem 0 3rem;}
     .donaList .box03{background-color: #8E8AFF;}
-  
     .donaList .box > div {color: #fff;}
     .donaList .box > div > span {color: #fff;}
     .donaList .box .title {font-size: 1.8rem; font-weight: 500; padding-bottom: 1.2rem;}
-    .donaList .box .middtit {font-size: 1.2rem; line-height: 2rem; padding-bottom: 7rem;}
-    .donaList .box .info {line-height: 1.4; opacity: 0.8; font-size: 0.9rem;}
-    .donaList .box > img {width:6rem; height: 6rem; position: absolute; right: 2rem; bottom: 7rem;}
+    .donaList .box .middtit {font-size: 1.2rem; line-height: 2rem; padding-bottom: 1.4rem;}
+    .donaList .box .info {line-height: 1.4; opacity: 0.8; font-size: 0.9rem; padding-bottom: 6rem;}
+    .donaList .box > img {width:6rem; height: 6rem; position: absolute; right: 2rem; bottom: 2rem;}
     .donaList .desc { text-align: right; padding-top: 4rem;}
     .donaList .desc .num {display: block; text-align: right;}
     .donaList .desc .num::after {content: ""; display: block;width: 26rem; background-color: rgba(0,0,0,0.1); height: 1px; font-size: 0px; line-height: 0px;}
     .no3 {padding-right: 0;}
-
     .donaList .desc .txt {font-size: 1.2rem; line-height: 1.7; padding-top: 2rem; }
     .donaList .desc02 > .txt {margin-right: 2rem;}
     .donaList .desc02 > .no2 {text-align: left;}
     .donaList .desc02 > .txt02 {text-align: left; }
-
 }
 
     @media screen and (min-width: 1200px) {
@@ -147,7 +138,13 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
         .donaList .desc .num::after{width: 40rem;}
     }
 
+    @media screen and (min-width: 2000px) {
+        .donaList .desc .num::after{width: 50rem;}
+    }
 
+    @media screen and (min-width: 2500px){
+        .donaList{width: 50%;}
+    }
 
 /******************************* diversify *******************************/
 .diversify_wrap { background-color: #FAFAFA; padding: 5.8rem 0; width: 100%;}
@@ -155,37 +152,35 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 .diversify_wrap .diver_inner {}
 .diversify_wrap .diver_inner .desc-txt { padding-bottom: 3rem;}
 .diversify_wrap .diver_inner .desc-txt > h2 {font-size: 1.2rem; font-weight: 500; color: #2D2D2D; padding-bottom: 2rem;}
-.diversify_wrap .diver_inner .desc-txt .stit > p {font-weight:bold; font-size: 1.4rem; padding-bottom: 2.5rem; line-height: 2rem;}
-.diversify_wrap .diver_inner .desc-txt .stit > p > span {font-weight: bold; color: #00B1B3;}
-.diversify_wrap .diver_inner .desc-txt .desc { line-height: 1.4;}
+.diversify_wrap .diver_inner .desc-txt .stit > p {font-weight:bold; font-size: 1.4rem; padding-bottom: 2.5rem; line-height: 2rem; color:#212121;}
+.diversify_wrap .diver_inner .desc-txt .stit > p > mark { position:relative; display: inline-block; color: #212121; z-index: 9}
+.diversify_wrap .diver_inner .desc-txt .stit > p > mark::before{content: ""; position: absolute; left: 0; bottom:0px; width: 100%; height: 14px; background-color: #9ce8e7; z-index: -1;}
+.diversify_wrap .diver_inner .desc-txt .desc { line-height: 1.4; color: rgba(0,0,0,0.8);}
+.diversify_wrap .diver_inner .desc-txt .desc > mark {position:relative; display: inline-block; color: #212121; z-index: 9}
+.diversify_wrap .diver_inner .desc-txt .desc > mark::before {content: ""; position: absolute; left: 0; bottom:0px; width: 100%; height: 8px; background-color: #9ce8e7; z-index: -1;}
+
 /* category */
 .cate_wrap {}
-
 .cate_wrap .cate_tit > p {font-size: 1.3rem; font-weight: bold; padding-bottom: 1.5rem;}
 .category {display: flex; justify-content: space-between; }
-.category > li { display: inline-block; background-color: #fff; color: #000; padding: 2% 4%; border: 1px solid #AEABAB; border-radius: 50px; font-size: 0.9rem;}
+.category > li { display: inline-block; background-color: #fff; color: #000; padding: 2% 4%; border: 1px solid #e3e3e3; border-radius: 50px; font-size: 0.9rem;}
 .category_pc{display: none;}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .diversify_wrap .diver_inner {width: 90%; position: relative;}
     .desc-txt .desc {position: absolute; right: 2rem; top:58px}
-
     .cate_wrap { padding-top: 3rem;}
     .category {width: 60%;  position: absolute; right: 10px; bottom: 16px;}
-    
 }
 
 @media all and (min-width: 1024px){
     .diver_inner {width: 70%; margin: 0 auto; position: relative;}
     .desc-txt .desc {position: absolute; right: 2rem; top:58px}
-    
-
     .cate_wrap { padding-top: 3rem;}
     .category {width: 60%;  position: absolute; right: 10px; bottom: 16px;}
 }
 
 @media screen and (min-width: 1200px) {
-
     .desc-txt .desc {display: none;}
     .desc-txt .desc_pc1200 {display: block; position: absolute; right:2rem; top: 58px; line-height: 1.6; width: 50%;}
     .category {width: 54%;}
@@ -215,8 +210,7 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 
 /* download-btn */
 .down-btn {flex-direction: column; align-items: baseline;}
-.down-btn .btn { width: 100%; vertical-align: top; border-radius: 2rem;  
-    display: flex; align-items: center; justify-content: center; background-color: #fff;}
+.down-btn .btn { width: 90%; vertical-align: top; border-radius: 2rem; display: flex; align-items: center; justify-content: center; background-color: #fff; margin: 0 auto;}
 .down-btn .btn:nth-child(1) {margin-bottom: 2%;}
 .down-btn > div > a { display: flex; justify-content: center; align-items: center; padding: 14px; color: inherit; text-decoration: none; cursor: pointer;}
 .down-btn > div > a > img {width: 20px; height: 20px;}
@@ -268,7 +262,6 @@ animation-direction: alternate;}
         0% {bottom: 47rem;}
         100% {bottom:49rem;}
     }
-    
     .character02 {bottom:-8rem; left: -1rem; width: 7rem;}
     @keyframes dudu{
         0% {bottom: -8rem;}
@@ -282,7 +275,6 @@ animation-direction: alternate;}
         0% {bottom: 47rem;}
         100% {bottom:49rem;}
     }
-    
     .character02 {bottom:-8rem; left: -8rem; width: 8rem;}
     @keyframes dudu{
         0% {bottom: -8rem;}
@@ -300,13 +292,11 @@ animation-direction: alternate;}
 }
 
 @media all and (min-width: 1800px) {
-
     .character01 { bottom: 47rem; width: 7rem;}
     @keyframes pruny{
         0% {bottom: 47rem;}
         100% {bottom:49rem;}
     }
-
     .character02 {bottom:-8rem; left: -16rem; width: 10rem;}
     @keyframes dudu{
         0% {bottom: -8rem;}
