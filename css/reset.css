@@ -128,3 +128,13 @@ html:not(.mobile) ::selection {
     color: #08dbc7;
     text-shadow: none;
 }
+
+/* select box 스타일 초기화 */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/* IE에서 select box 화살표 제거 */
+select::-ms-expand{display: none;}
+
