@@ -4,20 +4,39 @@
 .content {width: 100%;}
 .content_inner {margin: 0 auto; padding: 0 15px;}
 
-/* page2 숨기기 */
-.wrap_inner {display: none;}
-.page01 {display: block;}
 
 /****************************** top banner ******************************/
-.donation_banner { position: relative; width: 100%; height: 75vh; padding: 5rem 0 0; background-color: #63C5A7;}
-.donation_banner .layout{ height: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; display: block; padding-top: 7rem;}
-.donation_banner .main-tit { width:100%;}
-.donation_banner .main-tit > h2 { font-size: 2.4rem; color:#fff; font-weight: 500; text-align: center; padding-bottom: 2rem;}
-.donation_banner .main-tit .destxt { font-size: 1.2rem; line-height: 1.5; color: #fff; padding-bottom: 2rem; display: block; text-align: center;}
+.donation_banner { margin-top:86px;position: relative; width: 100%; height: 50vh; background-color: #63C5A7;}
+.donation_banner .layout{ height: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; display: block;}
+.donation_banner .main-tit { width:100%; position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%); }
+.donation_banner .main-tit > h2 { font-size: 2.2rem; color:#fff; font-weight: 500; text-align: center; padding-bottom: 2rem;}
+.donation_banner .main-tit .destxt { font-size: 1.08rem; line-height: 1.5; color: #fff; display: block; text-align: center;}
 .donation_banner .layout .decowrap { }
-.donation_banner .layout .decowrap .deco1 {position:absolute; left:4rem; bottom:0; background: url(../images/deco02.svg); background-repeat: no-repeat; background-position: 18% bottom; width: 120px; height: 240px ; background-size: 80%; z-index: 99;}
-.donation_banner .layout .decowrap .deco2 {position:absolute; left:0; bottom:0; background: url(../images/deco01.svg); width: 120px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom left;}
-.donation_banner .layout .decowrap .deco3 {position:absolute; right:0; bottom:0; background: url(../images/deco03.svg); width: 180px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom right;}
+.donation_banner .layout .decowrap .deco1 {position:absolute; left:4rem; bottom:0; background: url(../images/deco02.svg); background-repeat: no-repeat; background-position: left 126%; width: 110px; height: 200px ; background-size: 70%; z-index: 99;}
+.donation_banner .layout .decowrap .deco2 {position:absolute; left:0; bottom:0; background: url(../images/deco01.svg); width: 110px; height: 200px; background-size: 70%; background-repeat: no-repeat; background-position:left 156%;}
+.donation_banner .layout .decowrap .deco3 {position:absolute; right:0; bottom:0; background: url(../images/deco03.svg); width: 170px; height: 200px; background-size: 70%; background-repeat: no-repeat; background-position:right 166%;}
+
+
+@media  (max-width: 375px){
+    .donation_banner {height: 44vh;}
+    .donation_banner .main-tit > h2 {font-size:1.9rem}
+    .donation_banner .main-tit .destxt {font-size:1rem;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .donation_banner{height: 46vh;}
+    .donation_banner .layout .decowrap .deco1 {left: 4rem;bottom: 0;background-position: 18% bottom;width: 120px;height: 240px;background-size: 80%;z-index: 99;}
+    .donation_banner .layout .decowrap .deco2 {left: 0;bottom: 0;width: 120px;height: 240px;background-size: 80%;background-position: bottom left;}
+    .donation_banner .layout .decowrap .deco3 {right: 0;bottom: 0;width: 180px;height: 240px;background-size: 80%;background-position: bottom right;}
+}
+
+@media all and (min-width: 1024px) {
+    .donation_banner{height: 56vh;}
+    .donation_banner .layout .decowrap .deco1 {left:7rem; bottom:0; background: url(../images/deco02.svg); background-repeat: no-repeat; background-position: 18% bottom; width: 120px; height: 240px ; background-size: 80%; z-index: 99;}
+    .donation_banner .layout .decowrap .deco2 {left:2rem; bottom:0; background: url(../images/deco01.svg); width: 120px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom left;}
+    .donation_banner .layout .decowrap .deco3 {right:2rem; bottom:0; background: url(../images/deco03.svg); width: 180px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom right;}
+}
+
 
 /****************************** tap menu ******************************/
 
@@ -34,8 +53,8 @@
 .location-inner > ul > li .location-2dep li:first-child{border-top:0;}
 .location-inner > ul > li .location-2dep li a{display:block; color:#414141; font-size:15px; font-weight:300; text-align: center; }
 .location-inner > ul > li .location-2dep li a:hover{background:#f0f0f0}
-
-
+[data-tab-content] {display: none;}
+.active[data-tab-content] {display: block; color: #00B1B3;}
 
 
 
@@ -43,10 +62,8 @@
     /* 띄어쓰기 */
     .desc_br{display: block;}
 
-@media  (max-width: 280px){}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .donation_banner{height: 46vh;}
     .tabs .contentLocation {display: none;}
     .tabs .tab-button {  text-align: center;   display: flex;}
     .tabs .tab-button > ul {display: flex; width: 100%;}
@@ -56,10 +73,6 @@
 }
 
 @media all and (min-width: 1024px) {
-    .donation_banner{height: 56vh;}
-    .donation_banner .layout .decowrap .deco1 {position:absolute; left:7rem; bottom:0; background: url(../images/deco02.svg); background-repeat: no-repeat; background-position: 18% bottom; width: 120px; height: 240px ; background-size: 80%; z-index: 99;}
-    .donation_banner .layout .decowrap .deco2 {position:absolute; left:2rem; bottom:0; background: url(../images/deco01.svg); width: 120px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom left;}
-    .donation_banner .layout .decowrap .deco3 {position:absolute; right:2rem; bottom:0; background: url(../images/deco03.svg); width: 180px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom right;}
     .tabs .contentLocation {display: none;}
     .tabs .tab-button {  text-align: center;   display: flex;}
     .tabs .tab-button > ul {display: flex; width: 100%;}
@@ -67,8 +80,6 @@
     .tabs .tab-button > ul > li > a {font-size: 1.2rem; padding: 1.6rem; }
     .tabs .tab-button > ul > li > a:hover, .tabs .tab-button > ul > li > a:active {color: #00B1B3;}
 }
-
-@media screen and (min-width: 1200px) {}
 
 /****************************** donation-section1 content1 ******************************/
 .donation-section1 {}
@@ -80,28 +91,28 @@
 .donation-section1 .dona_inner .donation-txt h1 > mark { font-weight:bold; position:relative; display: inline-block; color: #212121;}
 .donation-section1 .dona_inner .donation-txt h1 > mark::before{ content: ""; position: absolute; left: 0; bottom:0px; width: 100%; height: 14px; background-color: #9ce8e7; z-index: -1;}
 mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
-.donation-txt .desc { line-height: 1.5; font-size: 1rem; width: 70%; margin: 0 auto;}
+.donation-txt .desc { line-height: 1.5; font-size: 1.1rem; width: 70%; margin: 0 auto;}
 .donaList {display: none;}
 .infomation { width: 90%; margin: 4rem auto 0;}
 .infomation::after {content: ""; display: block; flex-grow: 1; margin: 0 16px; height: 1px; font-size: 0px; line-height: 0px; border-bottom: 1px dashed rgba(0,0,0,0.07);}
 .info03::after{display: none;}
 .info03 {padding-bottom: 5rem;}
 .num {font-size: 4rem; font-weight: bold; color: rgba(0,0,0,0.07); text-align: center; padding: 0 10px 20px;}
-.layout01 .txt{ line-height: 1.6rem; width: 90%; margin: 0 auto; font-size: 1.1rem; text-align: center;}
+.layout01 .txt{ line-height: 1.5; width: 90%; margin: 0 auto; font-size: 1.1rem; text-align: center;}
 /* .layout01 .txt .desc_mobile {display: block;}
 .layout01 .txt .desc_br {display: none;} */
 .layout01 {padding-bottom: 3rem;}
-.layout01 .list {display:block; padding: 2rem; margin: 2rem auto 1.4rem; position: relative; border-radius: 3rem 3rem 3rem 0;}
+.layout01 .list {display:block; padding: 2.4rem; margin: 2rem auto 1.4rem; position: relative; border-radius: 3rem 3rem 3rem 0;}
 .layout01 .list.list02 {border-radius: 3rem 3rem 0 3rem;}
 .layout01 .list.list01 {background-color: #0BC9C3;}
 .layout01 .list.list02 {background-color: #FFC876;}
 .layout01 .list.list03 {background-color: #8E8AFF;}
 .layout01 .list .title {font-size: 1.8rem; font-weight: 500; padding-bottom: 1.2rem;}
 .layout01 .list .middtit {font-size: 1.1rem; line-height: 1.8rem; padding-bottom: 1.4rem;}
-.layout01 .list .info {line-height: 1.4; opacity: 0.8; font-size: 0.9rem; padding-bottom: 6rem;}
+.layout01 .list .info {line-height: 1.4; opacity: 0.8; font-size: 0.9rem; padding-bottom: 5rem;}
 .layout01 .list > div {color: #fff;}
 .layout01 .list > div > span {color: #fff;}
-.layout01 .list > img { width:6.2rem; height: 6.2rem; position: absolute; right: 2rem; bottom: 2rem;}
+.layout01 .list > img { width:6.2rem; height: 6.2rem; position: absolute; right: 2rem; bottom: 1.8rem;}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .donation-section1 .dona_inner .donation-txt h1 {font-size: 2.2rem;}
@@ -166,59 +177,64 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
     }
 
 /******************************* diversify *******************************/
-.diversify_wrap { background-color: #FAFAFA; padding: 5.8rem 0; width: 100%;}
+.diversify_wrap { background-color: #f9f9f9; padding: 7rem 0; width: 100%;}
 .desc_pc1200{display: none;}
 .diversify_wrap .diver_inner {}
-.diversify_wrap .diver_inner .desc-txt { padding-bottom: 3rem;}
-.diversify_wrap .diver_inner .desc-txt > h2 {font-size: 1.2rem; font-weight: 500; color: #2D2D2D; padding-bottom: 2rem;}
+.diversify_wrap .diver_inner .desc-txt { padding-bottom: 0; text-align: center;}
+.diversify_wrap .diver_inner .desc-txt > h2 {font-size: 1.2rem; font-weight: 500; color: #2D2D2D; padding-bottom: 2rem; }
 .diversify_wrap .diver_inner .desc-txt .stit > p {font-weight:bold; font-size: 1.4rem; padding-bottom: 2.5rem; line-height: 2rem; color:#212121;}
 .diversify_wrap .diver_inner .desc-txt .stit > p > mark { position:relative; display: inline-block; color: #212121; z-index: 9}
 .diversify_wrap .diver_inner .desc-txt .stit > p > mark::before{content: ""; position: absolute; left: 0; bottom:0px; width: 100%; height: 14px; background-color: #9ce8e7; z-index: -1;}
-.diversify_wrap .diver_inner .desc-txt .desc { line-height: 1.4; color: rgba(0,0,0,0.8);}
-.diversify_wrap .diver_inner .desc-txt .desc > mark {position:relative; display: inline-block; color: #212121; z-index: 9}
-.diversify_wrap .diver_inner .desc-txt .desc > mark::before {content: ""; position: absolute; left: 0; bottom:0px; width: 100%; height: 8px; background-color: #9ce8e7; z-index: -1;}
-
-/* category */
-.cate_wrap {}
-.cate_wrap .cate_tit > p {font-size: 1.3rem; font-weight: bold; padding-bottom: 1.5rem;}
-.category {display: flex; justify-content: space-between; }
-.category > li { display: inline-block; background-color: #fff; color: #000; padding: 2% 4%; border: 1px solid #e3e3e3; border-radius: 50px; font-size: 0.9rem;}
-.category_pc{display: none;}
+.diversify_wrap .diver_inner .desc-txt .desc { line-height: 1.5; color: rgba(0,0,0,0.8); font-size: 1.02rem;}
+/* .diversify_wrap .diver_inner .desc-txt .desc > mark {position:relative; display: inline-block; color: #212121; z-index: 9}
+.diversify_wrap .diver_inner .desc-txt .desc > mark::before {content: ""; position: absolute; left: 0; bottom:0px; width: 100%; height: 8px; background-color: #9ce8e7; z-index: -1;} */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .diversify_wrap .diver_inner {width: 90%; position: relative;}
-    .desc-txt .desc {position: absolute; right: 2rem; top:58px}
-    .cate_wrap { padding-top: 3rem;}
-    .category {width: 60%;  position: absolute; right: 10px; bottom: 16px;}
+    .desc-txt .desc {}
 }
 
 @media all and (min-width: 1024px){
     .diver_inner {width: 70%; margin: 0 auto; position: relative;}
-    .desc-txt .desc {position: absolute; right: 2rem; top:58px}
-    .cate_wrap { padding-top: 3rem;}
-    .category {width: 60%;  position: absolute; right: 10px; bottom: 16px;}
+    .desc-txt .desc {}
 }
 
 @media screen and (min-width: 1200px) {
-    .desc-txt .desc {display: none;}
-    .desc-txt .desc_pc1200 {display: block; position: absolute; right:2rem; top: 58px; line-height: 1.6; width: 50%;}
-    .category {width: 54%;}
+    .desc-txt .desc {}
+    .desc-txt .desc_pc1200 {}
 }
 
 @media screen and (min-width: 1400px) {
-    .desc-txt .desc_pc1200 {font-size: 1.1rem;}
+    .desc-txt .desc_tablet {font-size: 1.1rem;}
     .desc-txt .stit > p {font-size: 1.8rem;}
     .desc-txt .stit > p > span {font-size: 1.8rem;}
-    .cate_wrap {display: flex; justify-content: space-between; align-items:baseline;}
-    .category {display: none;}
-    .cate_tit > p {font-size: 1.6rem; font-weight: bold;}
-    .category_pc{display: flex; justify-content: space-between; width: 72%;}
-    .category_pc > li { display: inline-block; background-color: #fff; color: #000; padding: 2% 4%; border: 1px solid #AEABAB; border-radius: 50px; font-size: 0.9rem;}
 }
 
-@media screen and (min-width: 1600px){
-    .category_pc > li{font-size: 1.2rem;}
+/******************************* category *******************************/
+.cate_wrap {padding: 7rem 0;}
+.cate_wrap .cate_inner {text-align: center;}
+.cate_wrap .cate_tit > p {font-size: 1.6rem; font-weight: bold; padding-bottom: 2rem;}
+.cate_wrap .cate_tit .cate_desc {font-size: 1.06rem; line-height: 1.6; padding-bottom: 2.4rem;}
+.category {display: flex; justify-content: space-between; margin: 0 auto; }
+.category > li { display: inline-block; background-color: rgb(255, 255, 255); color: #000; padding: 2% 4%; border: 1px solid #e3e3e3; border-radius: 50px; font-size: 0.85rem;}
+.category_pc{display: none;}
+
+@media screen and (min-width: 415px) {
+    .category {width: 380px;}
+    .category > li { display: inline-block; background-color: rgb(255, 255, 255); color: #000; padding: 2% 4%; border: 1px solid #e3e3e3; border-radius: 50px; font-size: 0.85rem;}
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .cate_wrap {}
+    .category {}
+}
+
+@media all and (min-width: 1024px){
+    .cate_wrap { }
+    .category {width: 420px}
+}
+
+
 
 /******************************* App Download *******************************/
 .app-download { background-color:#00B1B3; text-align: center;}
@@ -236,13 +252,13 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 .down-btn .btn > a > span {font-weight: 500;}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .down-btn {flex-direction: row; display: flex; width: 80%; margin: 0 auto; justify-content: space-between;}
+    .down-btn {flex-direction: row; display: flex; width: 50%; margin: 0 auto; justify-content: space-between;}
     .down-btn .btn {}
     .down-btn .btn:nth-child(1) {margin-right: 10px;}
 }
 
 @media all and (min-width: 1024px) {
-    .down-btn {flex-direction: row; display: flex; width: 40%; margin: 0 auto; justify-content: space-between;}
+    .down-btn {flex-direction: row; display: flex; width: 44%; margin: 0 auto; justify-content: space-between;}
     .down-btn .btn {}
     .down-btn .btn:nth-child(1) {margin-right: 10px;}
 }
@@ -253,7 +269,7 @@ mark {margin: 0; padding: 0; border: 0; font: inherit; background: none;}
 
 /******************************* 캐릭터 애니메이션 *******************************/
 .wrap_inner {position: relative; width: 100%;}
-.character01 {position: absolute; bottom: 56rem; right: 0.9rem; width: 4rem;
+.character01 {position: absolute; bottom: 74rem; right: 0.9rem; width: 4rem;
 animation-name: pruny;
 animation-duration: 1s;
 animation-timing-function: ease-in-out;
@@ -261,8 +277,8 @@ animation-iteration-count: infinite;
 animation-direction: alternate;
 }
 @keyframes pruny {
-    0% {right: 0.7rem; bottom:56rem;}
-    100% {right: 0.9rem; bottom:58rem;}
+    0% {right: 0.7rem; bottom:74rem;}
+    100% {right: 0.9rem; bottom:75rem;}
 }
 .character02 {position: absolute; bottom: 20rem; left: 0; width: 6rem;
 animation-name: dudu;
@@ -275,51 +291,52 @@ animation-direction: alternate;}
     100% { left: 0; bottom: 19rem;}
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .character01 { bottom: 47rem; width: 5rem;}
+    .character01 { bottom: 70rem; width: 5rem;}
     @keyframes pruny{
-        0% {bottom: 47rem;}
-        100% {bottom:49rem;}
+        0% {bottom: 70rem;}
+        100% {bottom:71rem;}
     }
-    .character02 {bottom:-8rem; left: -1rem; width: 7rem;}
+    .character02 {bottom:-36rem; left: -1rem; width: 7rem;}
     @keyframes dudu{
-        0% {bottom: -8rem;}
-        100% {bottom: -9rem;}
+        0% {bottom: -36rem;}
+        100% {bottom: -35rem;}
     }
 }
 
 @media all and (min-width: 1024px) {
-    .character01 { bottom: 47rem; width: 6rem;}
+    .character01 { bottom: 70rem; width: 6rem;}
     @keyframes pruny{
-        0% {bottom: 47rem;}
-        100% {bottom:49rem;}
+        0% {bottom: 70rem;}
+        100% {bottom:71rem;}
     }
-    .character02 {bottom:-8rem; left: -8rem; width: 8rem;}
+    .character02 {bottom:-36rem; left: -8rem; width: 8rem;}
     @keyframes dudu{
-        0% {bottom: -8rem;}
-        100% {bottom: -9rem;}
+        0% {bottom: -36rem;}
+        100% {bottom: -35rem;}
     }
 }
 
 @media all and (min-width: 1400px) {
 
-    .character02 {bottom:-8rem; left: -12rem; width: 8rem;}
+    .character02 {bottom:-36rem; left: -12rem; width: 8rem;}
     @keyframes dudu{
-        0% {bottom: -8rem;}
-        100% {bottom: -9rem;}
+        0% {bottom: -36rem;}
+        100% {bottom: -35rem;}
     }
 }
 
 @media all and (min-width: 1800px) {
-    .character01 { bottom: 47rem; width: 7rem;}
+    .character01 { bottom: 70rem; width: 7rem;}
     @keyframes pruny{
-        0% {bottom: 47rem;}
-        100% {bottom:49rem;}
+        0% {bottom: 70rem;}
+        100% {bottom:71rem;}
     }
-    .character02 {bottom:-8rem; left: -16rem; width: 10rem;}
+    .character02 {bottom:-37rem; left: -16rem; width: 10rem;}
     @keyframes dudu{
-        0% {bottom: -8rem;}
-        100% {bottom: -9rem;}
+        0% {bottom: -37rem;}
+        100% {bottom: -36rem;}
     }
 }
 
