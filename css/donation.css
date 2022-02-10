@@ -22,18 +22,18 @@
 /****************************** tap menu ******************************/
 
 .tabs .tab-button {display: none;}
-.tabs .contentLocation{width:100%; height:50px; border-top:1px solid #cfcfcf; border-bottom:1px solid #cfcfcf; background-color:#dadada; padding: ;}
-.tabs .location-inner{height:100%; width:100%; background-color:#f0f0f0;}
-.tabs .location-inner > ul{ height:100%;}
-.tabs .location-inner > ul > li{text-align:center; position:relative; float:left; width:100%; height:100%; color:#373737; line-height:50px; color: #00B1B3;}
-.tabs .location-inner > ul > li > a{display:block; }
-.tabs .location-inner > ul > li .location-2dep{display:none; position:absolute; top:50px; left:0;width:100%; border:1px solid #cfcfcf; border-bottom-color:#cfcfcf; background-color:#fff; z-index:11}
-.tabs .location-inner > ul > li.location1 .location-2dep{width:100%;}
-.tabs .location-inner > ul > li .location-2dep li{height:44px; line-height:44px; border-top:1px solid #cfcfcf;}
-.tabs .location-inner > ul > li .location-2dep li:first-child{border-top:0;}
-.tabs .location-inner > ul > li .location-2dep li a{display:block; color:#414141; font-size:15px; font-weight:300; letter-spacing:-0.75px;}
-.tabs .location-inner > ul > li .location-2dep li a:hover{background:#f0f0f0 url(/images/icon/location_arrow2.jpg) no-repeat 95% 50%}
-
+.contentLocation{position:relative; width:100%; height:56px; border-top:1px solid rgba(0,0,0,0.1); border-bottom:1px solid rgba(0,0,0,0.1); }
+.location-inner { height: 100%;}
+.location-inner > ul{ height:100%;}
+.location-inner > ul > li{position:relative; float:left; width:100%; height:100%; color:#373737; line-height:50px; padding-right:20px;}
+.location-inner > ul > li > a{display:block; background:url(../images/arrow_drop_down_black.svg) no-repeat 60% 44%; background-color: rgb(245, 245, 245); width: 100%; text-align: center; }
+.location-inner > ul > li.location1 .location-2dep{display:none; position:absolute; top:54px; width:100%; border:1px solid rgba(0,0,0,0.1); border-bottom-color:rgba(0,0,0,0.1); background-color:rgb(252, 252, 252); z-index:11}
+.location-inner > ul > li.location1 {padding-right: 0; height: 100%; color: #31595a;}
+.location-inner > ul > li.location1 > a {width: 100%; height: 100%; box-sizing: border-box; padding: 1rem; }
+.location-inner > ul > li .location-2dep li{width:100%; height:44px; border-top:1px solid rgba(0,0,0,0.1); box-sizing: border-box; padding: 0.8rem;}
+.location-inner > ul > li .location-2dep li:first-child{border-top:0;}
+.location-inner > ul > li .location-2dep li a{display:block; color:#414141; font-size:15px; font-weight:300; text-align: center; }
+.location-inner > ul > li .location-2dep li a:hover{background:#f0f0f0}
 
 
 
@@ -60,7 +60,7 @@
     .donation_banner .layout .decowrap .deco1 {position:absolute; left:7rem; bottom:0; background: url(../images/deco02.svg); background-repeat: no-repeat; background-position: 18% bottom; width: 120px; height: 240px ; background-size: 80%; z-index: 99;}
     .donation_banner .layout .decowrap .deco2 {position:absolute; left:2rem; bottom:0; background: url(../images/deco01.svg); width: 120px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom left;}
     .donation_banner .layout .decowrap .deco3 {position:absolute; right:2rem; bottom:0; background: url(../images/deco03.svg); width: 180px; height: 240px; background-size: 80%; background-repeat: no-repeat; background-position:bottom right;}
-    .tabs .tab-select {display: none;}
+    .tabs .contentLocation {display: none;}
     .tabs .tab-button {  text-align: center;   display: flex;}
     .tabs .tab-button > ul {display: flex; width: 100%;}
     .tabs .tab-button > ul > li { width: 50%; border: 1px solid rgba(0,0,0,0.1); padding: 1.6rem; cursor: pointer; }
